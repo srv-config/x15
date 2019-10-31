@@ -113,7 +113,7 @@
 		<Item Cat="14" Index="72" Option1="1" Value1="15" Option2="0" Value2="0" Time="18000" /> <!-- Scroll of Quickness -->
 		<Item Cat="14" Index="73" Option1="3" Value1="60" Option2="0" Value2="0" Time="18000" /> <!-- Scroll of Defense -->
 		<Item Cat="14" Index="74" Option1="14" Value1="30" Option2="0" Value2="0" Time="18000" /> <!-- Scroll of Wrath -->
-		<Item Cat="14" Index="75" Option1="15" Value1="30" Option2="0" Value2="0" Time="18000" /> <!-- Scroll of Wizardry -->
+		<Item Cat="14" Index="75" Option1="15" Value1="30" Option2="27" Value2="30" Time="18000" /> <!-- Scroll of Wizardry -->
 		<Item Cat="14" Index="76" Option1="4" Value1="200" Option2="0" Value2="0" Time="18000" /> <!-- Scroll of Health -->
 		<Item Cat="14" Index="77" Option1="5" Value1="300" Option2="0" Value2="0" Time="18000" /> <!-- Scroll of Mana -->
 	</Section>
@@ -388,7 +388,7 @@
 		<Item Cat="14" Index="433" Option1="5" Value1="700" Option2="0" Value2="0" Time="1800" /> <!-- Mana Medicine -->
 		<Item Cat="14" Index="434" Option1="1" Value1="10" Option2="0" Value2="0" Time="1800" /> <!-- Speed medicine -->
 		<Item Cat="14" Index="435" Option1="14" Value1="40" Option2="0" Value2="0" Time="1800" /> <!-- Power Medicine -->
-		<Item Cat="14" Index="436" Option1="15" Value1="40" Option2="0" Value2="0" Time="1800" /> <!-- Spell Medicine -->
+		<Item Cat="14" Index="436" Option1="15" Value1="40" Option2="27" Value2="40" Time="1800" /> <!-- Spell Medicine -->
 		<Item Cat="14" Index="437" Option1="3" Value1="100" Option2="0" Value2="0" Time="1800" /> <!-- Defense Medicine -->
 		<Item Cat="14" Index="438" Option1="0" Value1="85" Option2="0" Value2="0" Time="1800" /> <!-- Fungus of Death -->
 		<Item Cat="14" Index="439" Option1="0" Value1="85" Option2="0" Value2="0" Time="1800" /> <!-- Dragee of Strength -->
@@ -396,5 +396,9 @@
 
 	<Section ID="85">
 		<Item Cat="14" Index="453" Option1="0" Value1="0" Option2="0" Value2="0" Time="1800" /> <!-- Switch Scroll -->
+	</Section>
+	
+	<Section ID="86">
+		<Item Cat="12" Index="471" Option1="0" Value1="0" Option2="0" Value2="0" Time="-10" /> <!-- Ghost Town -->
 	</Section>
 </ItemOptionManager>

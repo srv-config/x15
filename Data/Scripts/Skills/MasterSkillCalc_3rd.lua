@@ -21,6 +21,7 @@ CLASS_SUMMONER                                        = 5
 CLASS_RAGEFIGHTER                                     = 6
 CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
+CLASS_SLAYER									  	  = 9
 
 -- SkillID: 392, Nova Strengthener - (Grand Master)
 function NovaSkillCalc_Master_Wizard(InDamage, Energy)
@@ -207,7 +208,9 @@ function ElfHeal_Level1(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = Energy / 5 + 5
 		elseif (Class == CLASS_RUNEWIZARD) then
-			SkillEffect = Energy / 5 + 5			
+			SkillEffect = Energy / 5 + 5
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = Energy / 5 + 5				
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -254,6 +257,8 @@ function ElfDefense_Level1(Class, Index, TargetIndex, Energy)
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -292,7 +297,9 @@ function ElfDefense_Level2(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_RUNEWIZARD) then
-			SkillEffect = 2 + Energy / 8			
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = 2 + Energy / 8
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 2 + Energy / 8
@@ -324,7 +331,9 @@ function ElfAttack_Level1(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_RUNEWIZARD) then
-			SkillEffect = 3 + Energy / 7			
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = 3 + Energy / 7				
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -356,6 +365,8 @@ function ElfAttack_Level2(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_RUNEWIZARD) then
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = 3 + Energy / 7			
 		end
 	elseif (Index == TargetIndex) then
@@ -635,6 +646,42 @@ function SummonerInnovation_PvP_Level1(Energy, Curse, PlayerLevel, TargetLevel)
 	return SkillSuccessRate, SkillEffect, SkillTime
 end
 
+-- SkillID: 772, Weakness Mastery - MvP - (Dimension Master)
+function SummonerWeakness_Monster_Level2(Energy, Curse, MonsterLevel)
+	local SkillSuccessRate = Energy / 50 + Curse / 6 + 32
+	local SkillEffect = Energy / 58 + 4
+	local SkillTime = Energy / 100 + 4 - MonsterLevel / 20
+	
+	return SkillSuccessRate, SkillEffect, SkillTime
+end
+
+-- SkillID: 772, Weakness Mastery - PvP - (Dimension Master)
+function SummonerWeakness_PvP_Level2(Energy, Curse, PlayerLevel, TargetLevel)
+	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
+	local SkillEffect = Energy / 93 + 3
+	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	
+	return SkillSuccessRate, SkillEffect, SkillTime
+end
+
+-- SkillID: 773, Innovation Mastery - MvP - (Dimension Master)
+function SummonerInnovation_Monster_Level2(Energy, Curse, MonsterLevel)
+	local SkillSuccessRate = Energy / 50 + Curse / 6 + 32
+	local SkillEffect = Energy / 90 + 20
+	local SkillTime = Energy / 100 + 4 - MonsterLevel / 20
+	
+	return SkillSuccessRate, SkillEffect, SkillTime
+end
+
+-- SkillID: 773, Innovation Mastery - PvP - (Dimension Master)
+function SummonerInnovation_PvP_Level2(Energy, Curse, PlayerLevel, TargetLevel)
+	local SkillSuccessRate =  Energy / 50 + Curse / 6 + 17
+	local SkillEffect = Energy / 110 + 12
+	local SkillTime = Energy / 300 + (PlayerLevel - TargetLevel) / 150 + 5
+	
+	return SkillSuccessRate, SkillEffect, SkillTime
+end
+
 -- SkillID: 458, Drain Life Strengthener - MvP - (Dimension Master)
 function SummonerDrainLife_Monster_Level1(Energy, MonsterLevel)
 	local AddHP = (Energy / 15) + MonsterLevel / 2.5
@@ -651,29 +698,34 @@ end
 
 -- SkillID: 469, Berserker Strengthener - (Dimension Master)
 function SummonerBerserker_Level1(Energy)
-	local SkillEffectUP = Energy / 30
-	local SkillEffectDOWN = Energy / 60
-	local SkillTime = Energy / 20 + 30
+	local SkillEffectUP = (Energy / 30)
+	local SkillEffectDOWN = (Energy / 60)
 	
-	return SkillEffectUP, SkillEffectDOWN, SkillTime
+	return SkillEffectUP, SkillEffectDOWN
 end
 
 -- SkillID: 470, Berserker Proficiency - (Dimension Master)
 function SummonerBerserker_Level2(Energy)
-	local SkillEffectUP = Energy / 30
-	local SkillEffectDOWN = Energy / 60
-	local SkillTime = Energy / 20 + 30
+	local SkillEffectUP = (Energy / 30)
+	local SkillEffectDOWN = (Energy / 60)
 	
-	return SkillEffectUP, SkillEffectDOWN, SkillTime
+	return SkillEffectUP, SkillEffectDOWN
 end
 
--- SkillID: 472, Berserker Mastery - (Dimension Master)
-function SummonerBerserker_Level3(Energy)
-	local SkillEffectUP = Energy / 30
-	local SkillEffectDOWN = Energy / 60
-	local SkillTime = Energy / 20 + 30
+-- SkillID: 770, Darkness Strengthener - (Dimension Master)
+function SummonerDarkness_Level1(Energy)
+	local SkillEffectUP = (Energy / 30)
+	local SkillEffectDOWN = (Energy / 60)
 	
-	return SkillEffectUP, SkillEffectDOWN, SkillTime
+	return SkillEffectUP, SkillEffectDOWN
+end
+
+-- SkillID: 771, Darkness Proficiency - (Dimension Master)
+function SummonerDarkness_Level2(Energy)
+	local SkillEffectUP = (Energy / 30)
+	local SkillEffectDOWN = (Energy / 60)
+	
+	return SkillEffectUP, SkillEffectDOWN
 end
 
 -- SkillID: 554, Killing Blow Mastery - (Fist Master)
@@ -1004,4 +1056,22 @@ function WizardExpansionWizardryCalc_Level2(Class, Energy, MagicDamageMax, Skill
 	local SkillTime = 1800
 
 	return SkillEffect1, SkillEffect2, SkillTime
+end
+
+-- SkillID: 781, Bat Flock Strenghtener - (Damage over time) - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
+function BatFlock_MasterLevel1_DotDamage(InDamage, Strength, Energy)
+	local Damage = InDamage
+	local DotDamage = InDamage / 10
+	local Time = 3
+	
+	return Damage, DotDamage, Time
+end
+
+-- SkillID: 782, Bat Flock Mastery - (Damage over time) - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
+function BatFlock_MasterLevel2_DotDamage(InDamage, Strength, Energy)
+	local Damage = InDamage
+	local DotDamage = (InDamage / 10)
+	local Time = 3
+	
+	return Damage, DotDamage, Time
 end

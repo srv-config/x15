@@ -21,6 +21,7 @@ CLASS_SUMMONER                                        = 5
 CLASS_RAGEFIGHTER                                     = 6
 CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
+CLASS_SLAYER										  = 9
 
 -- SkillID: 1071, Soul Barrier Strengthener - (Grand Master)
 function DeathStab_4thEnchant_Knight(InDamage, Energy)
@@ -207,4 +208,13 @@ function LightningStorm_4thEnchant_RuneWizard(InDamage, Strength, Dexterity, Vit
 	local OutDamage = InDamage
 	
 	return OutDamage
+end
+
+-- SkillID: 1159, Bat Flock Enhancement - (Damage over time) - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
+function BatFlock_DotDamage_4thEnchant_Slayer(InDamage, Strength, Energy)
+	local Damage = InDamage
+	local DotDamage = (InDamage / 10)
+	local Time = 3
+	
+	return Damage, DotDamage, Time
 end

@@ -153,7 +153,7 @@
 			<Item Cat="0" Index="19" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" Setitem="0" SocketCount="0" ElementalItem="0" Rate="50" /> <!-- Divine Sword of Archangel -->
 			<Item Cat="13" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Condor Feather -->
 			<Item Cat="13" Index="276" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="100" /> <!--  Conqueror's Badge -->
-			<Item Cat="12" Index="307" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="-1" Rate="25" /> <!-- Lemuria's Orb -->
+			<Item Cat="12" Index="457" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="25" /> <!-- 700 Article Earning -->
 			<Item Cat="14" Index="53" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Talisman of Luck -->
 			<Item Cat="14" Index="352" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Ruud Box (1000) -->
 			<Item Cat="14" Index="280" MinLevel="0" MaxLevel="0" Skill="0" Luck="0" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="75" /> <!-- Master EXP Potion (6) -->
@@ -199,7 +199,20 @@
 			<Item Cat="14" Index="31" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Guardian Jewel -->
 			<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Jewel of Harmony -->
 			<Item Cat="14" Index="42" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Jewel of Harmony -->
-		</Section>			
+		</Section>
+		<Section ID="9" Active="1" ItemCat="14" ItemIndex="13" Cost="1" Name="Guardian Box">	
+			<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" Setitem="0" SocketCount="0" ElementalItem="0" Rate="15" /> <!-- 700 Article Earning -->
+			<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" Setitem="0" SocketCount="0" ElementalItem="0" Rate="25" /> <!-- 300 Article Earning -->
+			<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" Setitem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Necklace of Lightning -->
+			<Item Cat="14" Index="372" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-2" Setitem="0" SocketCount="0" ElementalItem="0" Rate="1000" /> <!-- Ring of Fire -->
+			<Item Cat="14" Index="14" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Soul -->
+			<Item Cat="14" Index="16" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Life -->
+			<Item Cat="14" Index="22" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Jewel of Creation -->
+			<Item Cat="12" Index="15" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="1000000" /> <!-- Jewel of Chaos -->
+			<Item Cat="14" Index="477" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="5000" /> <!-- Seal of Ghost Horses -->
+			<Item Cat="14" Index="466" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Sculpture -->
+			<Item Cat="14" Index="467" MinLevel="0" MaxLevel="0" Skill="1" Luck="1" Option="0" Exc="-1" Setitem="0" SocketCount="0" ElementalItem="0" Rate="2000" /> <!-- Guardian Enhanced Stone -->
+		</Section>
 	</ItemRewardList>
 	<RewardNotificationItems>							
 		<Item Cat="0" Index="19" Name="Divine Sword of Archangel" />
@@ -217,7 +230,7 @@
 		<Item Cat="12" Index="307" Name="Lemuria's Orb" />
 		<Item Cat="12" Index="308" Name="Norrwen's Bloodstring Lyra" />
 		<Item Cat="14" Index="53" Name="Talisman of Luck" />
-		<Item Cat="14" Index="189" Name="Elemental Talisman of Luck" />
+		<Item Cat="12" Index="457" Name="700 Article Earning" />
 		<Item Cat="12" Index="212" Name="Arca's Prophecy" />
 		<Item Cat="12" Index="213" Name="Antonia's Sword" />
 		<Item Cat="12" Index="214" Name="Kundun's Seal Scroll" />

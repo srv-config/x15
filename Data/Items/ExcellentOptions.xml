@@ -265,6 +265,11 @@
 		<Option ID="22" Number="3" Operator="2" Value="4" FormulaID="-1" ItemKindA="6" ItemKindB="62" Rate="3333" Name="Increase chance of Fully Recovering Life by %d%%" />
 		<Option ID="23" Number="4" Operator="2" Value="4" FormulaID="-1" ItemKindA="6" ItemKindB="62" Rate="3333" Name="Increase chance of True Damage by %d%%" />
 		<Option ID="24" Number="5" Operator="2" Value="4" FormulaID="-1" ItemKindA="6" ItemKindB="62" Rate="3334" Name="Increase chance of Double damage rate by %d%%" />
+		
+	<!--  -->
+		<Option ID="25" Number="3" Operator="2" Value="6" FormulaID="-1" ItemKindA="6" ItemKindB="80" Rate="3333" Name="Increase Life Recovery Rate by %d%%" />
+		<Option ID="26" Number="4" Operator="2" Value="6" FormulaID="-1" ItemKindA="6" ItemKindB="80" Rate="3333" Name="Increase chance to Deflect Enemy Defense by %d%%" />
+		<Option ID="27" Number="5" Operator="2" Value="6" FormulaID="-1" ItemKindA="6" ItemKindB="80" Rate="3334" Name="Increase chance of Double Damage by %d %%" />
 	</Wings>
 	
 	<WingOptionEffect>
@@ -292,7 +297,10 @@
 		<Option ID="21" Etc="0" Rate="4" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
 		<Option ID="22" Etc="0" Rate="5" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
 		<Option ID="23" Etc="0" Rate="4" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
-		<Option ID="24" Etc="0" Rate="8" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />		
+		<Option ID="24" Etc="0" Rate="8" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
+		<Option ID="25" Etc="0" Rate="5" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
+		<Option ID="26" Etc="0" Rate="4" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
+		<Option ID="27" Etc="0" Rate="8" Attack="0" Defense="0" Life="0" Mana="0" Skill="0" />
 	</WingOptionEffect>
 	
 	<OptionDropRate>

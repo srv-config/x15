@@ -20,6 +20,7 @@ CLASS_SUMMONER                                        = 5	-- Summoner, Bloody Su
 CLASS_RAGEFIGHTER                                     = 6	-- Rage Fighter, Fist Master
 CLASS_GROWLANCER									  = 7	-- Grow Lancer, Mirage Lancer
 CLASS_RUNEWIZARD									  = 8	-- Rune Wizard, Rune Spell Master, Grand Rune Master
+CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughterer
 
 -- Character Damage - Fist Fighting - (Dark Wizard, Soul Master, Grand Master)
 function WizardDamageCalc(Strength, Dexterity, Vitality, Energy)
@@ -171,6 +172,20 @@ function RuneWizardDamageCalc(Strength, Dexterity, Vitality, Energy)
 	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
 end
 
+function SlayerDamageCalc(Strength, Dexterity, Vitality, Energy)
+	local AttackDamageMinLeft = 0
+	local AttackDamageMaxLeft = 0
+	local AttackDamageMinRight = 0
+	local AttackDamageMaxRight = 0
+	
+	AttackDamageMinLeft = Strength / 8 -- Minimum Left Hand Damage
+	AttackDamageMinRight = Strength / 8 -- Minimum Right Hand Damage
+	AttackDamageMaxLeft = Strength / 4 -- Maximum Left Hand Damage
+	AttackDamageMaxRight = Strength / 4 -- Maximum Right Hand Damage
+	
+	return AttackDamageMinLeft, AttackDamageMinRight, AttackDamageMaxLeft, AttackDamageMaxRight
+end
+
 -- Character Magic Damage - (Dark Wizard, Soul Master, Grand Master)
 function WizardMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
@@ -264,8 +279,19 @@ function GrowLancerMagicDamageCalc(Energy)
 	return MagicDamageMin, MagicDamageMax
 end
 
--- Character Magic Damage - (Rune Wizard, Rune Spell Master, Grand Rune Master)WizardDamageCalc
+-- Character Magic Damage - (Rune Wizard, Rune Spell Master, Grand Rune Master)
 function RuneWizardMagicDamageCalc(Energy)
+	local MagicDamageMin = 0
+	local MagicDamageMax = 0
+	
+	MagicDamageMin = Energy / 9 -- Minimum Magic Damage
+	MagicDamageMax = Energy / 4 -- Maximum Magic Damage
+	
+	return MagicDamageMin, MagicDamageMax
+end
+
+-- Character Magic Damage - (Slayer, Royal Slayer, Master Slayer)
+function SlayerMagicDamageCalc(Energy)
 	local MagicDamageMin = 0
 	local MagicDamageMax = 0
 	
@@ -307,6 +333,9 @@ function CalcAttackSpeed(Class, Dexterity)
 	elseif(Class == CLASS_RUNEWIZARD) then
 		AttackSpeed = Dexterity / 12
 		MagicSpeed = Dexterity / 12
+	elseif(Class == CLASS_SLAYER) then
+		AttackSpeed = Dexterity / 12
+		MagicSpeed = Dexterity / 12
 	end
 	
 	return AttackSpeed, MagicSpeed
@@ -333,6 +362,8 @@ function CalcAttackSuccessRate_PvM(Class, Strength, Dexterity, Command, Level)
 	elseif(Class == CLASS_GROWLANCER) then
 		AttackSuccessRate = Level * 5 + Dexterity * 1.25 + Strength / 4
 	elseif(Class == CLASS_RUNEWIZARD) then
+		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
+	elseif(Class == CLASS_SLAYER) then
 		AttackSuccessRate = Level * 5 + Dexterity * 1.5 + Strength / 4
 	end
 	
@@ -361,6 +392,8 @@ function CalcDefenseSuccessRate_PvM(Class, Dexterity)
 		DefenseSuccessRate = Dexterity / 4
 	elseif(Class == CLASS_RUNEWIZARD) then
 		DefenseSuccessRate = Dexterity / 3
+	elseif(Class == CLASS_SLAYER) then
+		DefenseSuccessRate = Dexterity / 3
 	end
 	
 	return DefenseSuccessRate
@@ -387,6 +420,8 @@ function CalcDefense(Class, Dexterity)
 	elseif(Class == CLASS_GROWLANCER) then
 		Defense = Dexterity / 7
 	elseif(Class == CLASS_RUNEWIZARD) then
+		Defense = Dexterity / 5
+	elseif(Class == CLASS_SLAYER) then
 		Defense = Dexterity / 5
 	end
 	
@@ -415,6 +450,8 @@ function CalcAttackSuccessRate_PvP(Class, Dexterity, Level)
 		AttackRate = Dexterity * 2 + 3 * Level
 	elseif(Class == CLASS_RUNEWIZARD) then
 		AttackRate = Dexterity * 4 + 3 * Level
+	elseif(Class == CLASS_SLAYER) then
+		AttackRate = Dexterity * 4 + 3 * Level
 	end
 	
 	return AttackRate
@@ -441,6 +478,8 @@ function CalcDefenseSuccessRate_PvP(Class, Dexterity, Level)
 	elseif(Class == CLASS_GROWLANCER) then
 		DefenseRate = Dexterity / 5 + 2 * Level
 	elseif(Class == CLASS_RUNEWIZARD) then
+		DefenseRate = Dexterity / 3 + 4 * Level
+	elseif(Class == CLASS_SLAYER) then
 		DefenseRate = Dexterity / 3 + 4 * Level
 	end
 	
@@ -546,6 +585,17 @@ function RuneWizardElementalDamageCalc(Strength, Dexterity, Vitality, Energy, It
 	return MinDamage, MaxDamage
 end
 
+-- Character Elemental Damage - PvP and MvP - Slayer, Royal Slayer, Master Slayer)
+function SlayerElementalDamageCalc(Strength, Dexterity, Vitality, Energy, ItemMinDamage, ItemMaxDamage)
+	local MinDamage = 0
+	local MaxDamage = 0
+	
+	MinDamage = ItemMinDamage + (Energy / 9)
+	MaxDamage = ItemMaxDamage + (Energy / 6)
+	
+	return MinDamage, MaxDamage
+end
+
 -- Character Elemental Defense - General
 function ElementalDefenseCalc(Class, Dexterity)
 	local Defense = 0
@@ -567,6 +617,8 @@ function ElementalDefenseCalc(Class, Dexterity)
 	elseif(Class == CLASS_GROWLANCER) then
 		Defense = Dexterity / 7
 	elseif(Class == CLASS_RUNEWIZARD) then
+		Defense = Dexterity / 3
+	elseif(Class == CLASS_SLAYER) then
 		Defense = Dexterity / 3
 	end
 	

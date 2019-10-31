@@ -54,6 +54,7 @@
 //	RageFighter: 0 - Disallow, 1 - Rage Fighter, 2 - Fist Master, 4 - Fist Blazer
 //	GrowLancer: 0 - Disallow, 1 - Grow Lancer, 2 - Miracle Lancer, 4 - Shining Lancer
 //	RuneWizard: 0 - Disallow, 1 - Rune Wizard, 2 - Rune Spell Master, 4 - Rune Grand Master
+//	Slayer: 0/1/2/3/4
 //	PlayerMinLevel: Minimum level of player to apply drop of items from the section (must be lower or equal to PlayerMaxLevel)
 //	PlayerMaxLevel: Maximum level of player to apply drop of items from the section (must be greater or equal to PlayerMinLevel)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

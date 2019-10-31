@@ -20,7 +20,7 @@
 //		~ 3: Hammer Icon
 //		~ 4: Elixir Icon
 //		~ 5: Locker Icon
-//		~ 6: UNK
+//		~ 6: Object Icon
 //	SyncType:
 //		~ 0: Tag is not displayed
 //		~ 1: Tag displayed always
@@ -341,9 +341,22 @@
 		<Tag Id="7" MapNumber="62" NPCIndex="473" X="232" Y="13" DisplayType="4" SyncType="2" Name="Donner" />
 		<Tag Id="8" MapNumber="62" NPCIndex="474" X="216" Y="19" DisplayType="4" SyncType="2" Name="Vixen" />
 		<Tag Id="9" MapNumber="62" NPCIndex="475" X="193" Y="27" DisplayType="4" SyncType="2" Name="Blitzen" />
-	</TypeOne>
+	<!-- Abyss of Atlans 3 -->
+		<Tag Id="0" MapNumber="130" NPCIndex="840" X="36" Y="95" DisplayType="1" SyncType="1" Name="Darkness Elite Zone" />
+		<Tag Id="1" MapNumber="130" NPCIndex="840" X="78" Y="218" DisplayType="1" SyncType="1" Name="Earth Elite Zone" />
+		<Tag Id="2" MapNumber="130" NPCIndex="840" X="184" Y="212" DisplayType="1" SyncType="1" Name="Fire Elite Zone" />
+		<Tag Id="3" MapNumber="130" NPCIndex="840" X="217" Y="100" DisplayType="1" SyncType="1" Name="Wind Elite Zone" />
+		<Tag Id="4" MapNumber="130" NPCIndex="840" X="132" Y="24" DisplayType="1" SyncType="1" Name="Water Elite Zone" />
+	<!-- Scorched Canyon -->
+		<Tag Id="0" MapNumber="131" NPCIndex="840" X="205" Y="141" DisplayType="1" SyncType="1" Name="Earth Elite Zone" />
+		<Tag Id="1" MapNumber="131" NPCIndex="840" X="205" Y="219" DisplayType="1" SyncType="1" Name="Fire Elite Zone" />
+		<Tag Id="2" MapNumber="131" NPCIndex="840" X="38" Y="198" DisplayType="1" SyncType="1" Name="Darkness Elite Zone" />
+		<Tag Id="3" MapNumber="131" NPCIndex="840" X="42" Y="117" DisplayType="1" SyncType="1" Name="Wind Elite Zone" />
+		<Tag Id="4" MapNumber="131" NPCIndex="840" X="62" Y="30" DisplayType="1" SyncType="1" Name="Water Elite Zone" />
+	</TypeOne>	
 	<TypeTwo>
 	<!-- Lorencia -->
+	<Tag Id="0" MapNumber="129" X="121" Y="81" Name="Elite Zone" />
 		<Tag Id="0" MapNumber="0" X="121" Y="232" Name="Dungeon Entrance" />
 		<Tag Id="1" MapNumber="0" X="177" Y="31" Name="Deep Dungeon Entrance" />
 		<Tag Id="2" MapNumber="0" X="1" Y="38" Name="Devias Entrance" />
@@ -510,5 +523,11 @@
 		<Tag Id="32" MapNumber="125" X="227" Y="130" Name="Darkness Gate (A)" /> <!-- (Safe Zone) -->
 		<Tag Id="33" MapNumber="126" X="227" Y="130" Name="Darkness Gate (A)" /> <!-- (Safe Zone) -->
 		<Tag Id="34" MapNumber="127" X="227" Y="130" Name="Darkness Gate (A)" /> <!-- (Safe Zone) -->
+	<!-- Scorched Canyon -->
+		<Tag Id="0" MapNumber="131" X="209" Y="43" Name="Red Portal (A)" />
+		<Tag Id="1" MapNumber="131" X="143" Y="208" Name="Red Portal (B)" />
+		<Tag Id="2" MapNumber="131" X="196" Y="27" Name="Blue Portal (A)" />
+		<Tag Id="3" MapNumber="131" X="76" Y="75" Name="Blue Portal (B)" />
+	
 	</TypeTwo>
 </MiniMapObjects>

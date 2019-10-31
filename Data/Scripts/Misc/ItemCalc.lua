@@ -8,6 +8,7 @@ CLASS_SUMMONER                                        = 5	-- Summoner, Bloody Su
 CLASS_RAGEFIGHTER                                     = 6	-- Rage Fighter, Fist Master
 CLASS_GROWLANCER									  = 7	-- Grow Lancer, Mirage Lancer
 CLASS_RUNEWIZARD									  = 8	-- Rune Wizard, Rune Spell Master, Grand Rune Master
+CLASS_SLAYER									  	  = 9	-- Slayer, Royal Slayer, Master Slayer, Slaughterer 
 
 
 
@@ -116,7 +117,7 @@ function Wings_DecreaseHP(WingID, WingDur, Class, Skill)
 	
 	if (WingID == MakeItemID(12,266) and Class ~= CLASS_RAGEFIGHTER and WingDur > 0) then
 		HPDec = 3
-	elseif (Class == CLASS_WIZARD or Class == CLASS_ELF or Class == CLASS_SUMMONER or Class == CLASS_RUNEWIZARD) then
+	elseif (Class == CLASS_WIZARD or Class == CLASS_ELF or Class == CLASS_SUMMONER or Class == CLASS_RUNEWIZARD or Class == CLASS_SLAYER) then
 		HPDec = 1
 	elseif (Class == CLASS_RAGEFIGHTER) then
 		if (Skill == 263 or Skill == 559 or Skill == 563 or Skill == 269 or Skill == 262 or Skill == 558 or Skill == 562) then

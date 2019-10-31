@@ -22,6 +22,7 @@ CLASS_SUMMONER                                        = 5
 CLASS_RAGEFIGHTER                                     = 6
 CLASS_GROWLANCER									  = 7
 CLASS_RUNEWIZARD									  = 8
+CLASS_SLAYER									 	  = 9
 
 -- SkillID: 16, Soul Barrier - (Dark Wizard, Soul Master, Grand Master)
 function WizardMagicDefense(Index, TargetIndex, Dexterity, Energy)
@@ -174,6 +175,8 @@ function ElfHeal(Class, Index, TargetIndex, Energy)
 			SkillEffect = Energy / 5 + 5
 		elseif (Class == CLASS_RUNEWIZARD) then
 			SkillEffect = Energy / 5 + 5
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = Energy / 5 + 5
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = Energy / 5 + 5
@@ -205,7 +208,9 @@ function ElfAttack(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = 3 + Energy / 7
 		elseif (Class == CLASS_RUNEWIZARD) then
-			SkillEffect = 3 + Energy / 7			
+			SkillEffect = 3 + Energy / 7
+		elseif (Class == CLASS_SLAYER) then
+			SkillEffect = 3 + Energy / 7				
 		end
 	elseif (Index == TargetIndex) then
 		SkillEffect = 3 + Energy / 7
@@ -237,6 +242,8 @@ function ElfDefense(Class, Index, TargetIndex, Energy)
 		elseif (Class == CLASS_GROWLANCER) then
 			SkillEffect = 2 + Energy / 8
 		elseif (Class == CLASS_RUNEWIZARD) then
+			SkillEffect = 2 + Energy / 8
+		elseif (Class == CLASS_SLAYER) then
 			SkillEffect = 2 + Energy / 8			
 		end
 	elseif (Index == TargetIndex) then
@@ -384,19 +391,10 @@ end
 
 -- SkillID: 218, Berserker - (Summoner, Bloody Summoner, Dimension Master)
 function SummonerBerserker(Energy)
-	local SkillEffectUP = Energy / 30
-	local SkillEffectDOWN = Energy / 60
-	local SkillTime = Energy / 20 + 30
+	local SkillEffectUP = (Energy / 30)
+	local SkillEffectDOWN = (Energy / 60)
 	
-	return SkillEffectUP, SkillEffectDOWN, SkillTime
-end
-
--- SkillID: 218, BuffID: 81, 150, 151, 152 - (Summoner, Bloody Summoner, Dimension Master)
-function SummonerBerserkerAttackDamage(Strength, Dexterity)
-	local AttackMin = (Strength+Dexterity) / 7
-	local AttackMax = (Strength+Dexterity) / 4
-	
-	return AttackMin, AttackMax
+	return SkillEffectUP, SkillEffectDOWN
 end
 
 -- SkillID: 218, Berserker - Magic Damage - (Summoner, Bloody Summoner, Dimension Master)
@@ -407,10 +405,18 @@ function SummonerBerserkerMagicDamage(Energy, Effect)
 	return MagicMin, MagicMax
 end
 
--- SkillID: 218, Berserker - Curse Damage - (Summoner, Bloody Summoner, Dimension Master)
-function SummonerBerserkerCurseDamage(Energy, Effect)
-	local CurseMin = Effect * (Energy / 9) / 100
-	local CurseMax = Effect * ((Energy + 0.015) / 4) / 100
+-- SkillID: 289, Darkness - (Summoner, Bloody Summoner, Dimension Master)
+function SummonerDarkness(Energy)
+	local SkillEffectUP = (Energy / 30)
+	local SkillEffectDOWN = (Energy / 60)
+	
+	return SkillEffectUP, SkillEffectDOWN
+end
+
+-- SkillID: 289, Darkness - Curse Damage - (Summoner, Bloody Summoner, Dimension Master)
+function SummonerDarknessCurseDamage(Energy, Effect)
+	local CurseMin = ((Energy / 9) + 0.015) * Effect / 100
+	local CurseMax = ((Energy / 4) + 0.015) * Effect / 100
 	
 	return CurseMin, CurseMax
 end
@@ -813,4 +819,13 @@ function WizardExpansionWizardryCalc(Class, Energy)
 	local SkillTime = 1800
 
 	return SkillEffect, SkillTime
-end																					
+end		
+
+-- SkillID: 293, Bat Flock - (Damage over time) - (Slayer, Royal Slayer, Master Slayer)
+function BatFlock_DotDamage(InDamage, Strength, Energy)
+	local Damage = InDamage
+	local DotDamage = InDamage / 10
+	local Time = 3
+	
+	return Damage, DotDamage, Time
+end																			

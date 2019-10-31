@@ -72,4 +72,7 @@
 	<Map Number="125" FileName="MonsterMap_(125)_Bag.xml" />
 	<Map Number="126" FileName="MonsterMap_(126)_Bag.xml" />
 	<Map Number="127" FileName="MonsterMap_(127)_Bag.xml" />
+	<Map Number="128" FileName="MonsterMap_(128)_Bag.xml" />
+	<Map Number="129" FileName="MonsterMap_(129)_Bag.xml" />
+	<Map Number="130" FileName="MonsterMap_(130)_Bag.xml" />
 </EachMonsterMapList>

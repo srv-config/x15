@@ -11,8 +11,6 @@
 
 -- Any Custom chances to the script are out of support scope
 
--- ItemID formula: Group * 512 + Index
-
 -- Define Bag Types
 	BAG_DROP = 0 -- Mostly Boxes and other items which dropped on ground throws item
 	BAG_INVENTORY = 1 -- Mostly Boxes and other items which require right click to use in inventory
@@ -84,6 +82,11 @@
 	EVENTBAG_BCDS4_MONSTERS = 69 -- BagUseRate set to 0 by default
 	EVENTBAG_CW_ELF_ALTAR = 70
 	EVENTBAG_CW_HERO_LIST = 71
+	EVENTBAG_MSC_LEVEL1 = 72
+	EVENTBAG_MSC_LEVEL2 = 73
+	EVENTBAG_MSC_LEVEL3 = 74
+	EVENTBAG_MSC_LEVEL4 = 75
+	EVENTBAG_MSC_LEVEL5 = 76
 	
 -- Define Item Kind A values
 	ITEM_KIND_A_COMMON = 0
@@ -172,7 +175,10 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_DROP, MakeItemID(14,421),0, 'Item_(14,421,0)_Second_Wing_Box') -- DropFunction /1/
 	AddItemBag(BAG_DROP, MakeItemID(14,422),0, 'Item_(14,422,0)_Third_Wing_Box') -- DropFunction /1/
 	
-	--AddItemBag(BAG_DROP, MakeItemID(14,440),0, 'Item_(14,440,0)_Compensation_Box_B') -- DropFunction /1/
+	-- AddItemBag(BAG_DROP, MakeItemID(14,440),0, 'Item_(14,440,0)_Compensation_Box_B') -- DropFunction /1/
+	-- AddItemBag(BAG_DROP, MakeItemID(14,490),0, 'Item_(14,490,0)_[TEST]_Mastery_Armor_Box') -- DropFunction /1/
+	-- AddItemBag(BAG_DROP, MakeItemID(14,491),0, 'Item_(14,491,0)_[TEST]_Mastery_Weapon_Box') -- DropFunction /1/
+	-- AddItemBag(BAG_DROP, MakeItemID(14,493),0, 'Item_(14,493,0)_Term_Wing_Box') -- DropFunction /1/
 
 -- ====================================================================
 -- ItemBags -- BagType, MakeItemID(Type,Index), ItemLevel, 'FileName'
@@ -218,30 +224,43 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,391),0, 'Item_(14,391,0)_Event_Gift_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,392),0, 'Item_(14,392,0)_Card_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,393),0, 'Item_(14,393,0)_Card_Box_(10)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,398),0, 'Item_(14,398,0)_Attribute_Talisman_Box') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,400),0, 'Item_(14,400,0)_Labyrinth_Box_(Lowest)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,401),0, 'Item_(14,401,0)_Labyrinth_Box_(Lesser)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,402),0, 'Item_(14,402,0)_Labyrinth_Box_(Medium)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,403),0, 'Item_(14,403,0)_Labyrinth_Box_(Advanced)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,404),0, 'Item_(14,404,0)_Labyrinth_Box_(Improved)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,405),0, 'Item_(14,405,0)_Labyrinth_Box_(Highest)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,398),0, 'Item_(14,398,0)_Elemental_Talisman_Box') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,400),0, 'Item_(14,400,0)_Ruud Box_(10)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,401),0, 'Item_(14,401,0)_Ruud Box_(50)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,402),0, 'Item_(14,402,0)_Ruud Box_(100)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,403),0, 'Item_(14,403,0)_Labyrinth_Box_(Lower)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,404),0, 'Item_(14,404,0)_Labyrinth_Box_(Medium)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,405),0, 'Item_(14,405,0)_Labyrinth_Box_(Higher)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,408),0, 'Item_(14,408,0)_Jewel_Bingo_Lower_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,409),0, 'Item_(14,409,0)_Jewel_Bingo_Intermediate_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,410),0, 'Item_(14,410,0)_Jewel_Bingo_Advanced_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,411),0, 'Item_(14,411,0)_Jewel_Bingo_Premium_Box') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(12,481),0, 'Item_(12,481,0)_Special_Grain') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,423),0, 'Item_(14,423,0)_Baseball_Lower_Case') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,424),0, 'Item_(14,424,0)_Baseball_Intermediate_Box') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,425),0, 'Item_(14,425,0)_Baseball_Senior_Box') -- DropFunction /4/
 	
-	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,423),0, 'Item_(14,423,0)_Baseball_Lower_Case') -- DropFunction /4/
-	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,424),0, 'Item_(14,424,0)_Baseball_Intermediate_Box') -- DropFunction /4/
-	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,425),0, 'Item_(14,425,0)_Baseball_Senior_Box') -- DropFunction /4/
 	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,441),0, 'Item_(14,441,0)_Three_Vacancy_Box') -- DropFunction /4/
 	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,442),0, 'Item_(14,442,0)_Shiny_Earring_Box_(Left)') -- DropFunction /4/
 	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,443),0, 'Item_(14,443,0)_Shiny_Earring_Box_(Right)') -- DropFunction /4/
 	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,445),0, 'Item_(14,445,0)_Box_of_Blessing') -- DropFunction /4/
-	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,447),0, 'Item_(14,447,0)_Ruud_Box_(3000)') -- DropFunction /4/
-	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,448),0, 'Item_(14,448,0)_Ruud_Box_(3000)') -- DropFunction /4/
-	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,455),0, 'Item_(14,455,0)_Small_Gift_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,447),0, 'Item_(14,447,0)_Ruud_Box_(2000)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,448),0, 'Item_(14,448,0)_Ruud_Box_(3000)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,455),0, 'Item_(14,455,0)_Small_Gift_Box') -- DropFunction /4/
 	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,456),0, 'Item_(14,456,0)_Plain_Gift_Box') -- DropFunction /4/
 	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,457),0, 'Item_(14,457,0)_Luxury_Gift_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,465),0, 'Item_(14,465,0)_Guardian_Capsule') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,478),0, 'Item_(14,478,0)_Morse_Treasure_Chest') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,479),0, 'Item_(14,479,0)_Morse_Treasure_Winning_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,480),0, 'Item_(14,480,0)_[Lvl 1]_Soul_Converter_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,481),0, 'Item_(14,481,0)_[Lvl 2]_Soul_Converter_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,482),0, 'Item_(14,482,0)_[Lvl 3]_Soul_Converter_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,483),0, 'Item_(14,483,0)_[Lvl 4]_Soul_Converter_Box') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,484),0, 'Item_(14,484,0)_[Lvl 5]_Soul_Converter_Box') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,485),0, 'Item_(14,485,0)_Ruud_Box_(500)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,486),0, 'Item_(14,486,0)_Ruud_Box_(1500)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,487),0, 'Item_(14,487,0)_Ruud_Box_(400)') -- DropFunction /4/
+	-- AddItemBag(BAG_INVENTORY, MakeItemID(14,492),0, 'Item_(14,492,0)_Ghost_Horse_Capsule') -- DropFunction /4/
 
 -- ====================================================================
 -- MonsterBags -- BagType, 0, MonsterID, 'FileName'
@@ -285,6 +304,8 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_MONSTER, 0,760,'Monster_(760)_Rooster_White') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,761,'Monster_(761)_Rooster_Purple') -- DropFunction /2/
 	AddItemBag(BAG_MONSTER, 0,762,'Monster_(762)_Rooster_Red') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,839,'Monster_(839)_Elite_Great_Bahamut_of_Abyss') -- DropFunction /2/
+	AddItemBag(BAG_MONSTER, 0,840,'Monster_(840)_Elite_Lizard_King_of_Abyss') -- DropFunction /2/
 
 -- ====================================================================
 -- EventBags -- BagType, EventID, 0, 'FileName'
@@ -341,7 +362,12 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_EVENT, 58,0, 'Monster_(794)_God_of_Darkness') -- DropFunction /3/
 -- 59 - 69
 	AddItemBag(BAG_EVENT, 70,0, 'Event_CW_Elf_Altar') -- DropFunction /3/
-	AddItemBag(BAG_EVENT, 71,0, 'Event_CW_Hero_List') -- DropFunction /3/													  
+	AddItemBag(BAG_EVENT, 71,0, 'Event_CW_Hero_List') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 72,0, 'Item_(14,460,0)_[Lvl1]_Monster_Soul_Converter') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 73,0, 'Item_(14,461,0)_[Lvl2]_Monster_Soul_Converter') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 74,0, 'Item_(14,462,0)_[Lvl3]_Monster_Soul_Converter') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 75,0, 'Item_(14,463,0)_[Lvl4]_Monster_Soul_Converter') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 76,0, 'Item_(14,464,0)_[Lvl5]_Monster_Soul_Converter') -- DropFunction /3/
 
 -- Bags for purpose of Cherry Blossom Mix System
 	AddItemBag(BAG_EVENT, 13,0, 'Mix_Cherry_Blossom_Red_Reward') -- DropFunction /4/

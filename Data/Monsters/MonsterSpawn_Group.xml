@@ -61,7 +61,7 @@
 
 <MonsterGroupRegenSystem SpawnNotice="1">
 	<GroupSettings>
-		<Group Index="0" Duration="60" MapNumber="56" BossMonsterIndex="561" BossMonsterName="Medusa" SpawnNotice="Medusa and her assistants has invaded Swamp of Clamness!!!" DespawnNotice="Medusa and her assistants are gone" />
+		<Group Index="0" Duration="60" MapNumber="56" BossMonsterIndex="561" BossMonsterName="Medusa" SpawnNotice="Medusa and her assistants has invaded Swamp of Clamness!!!" DespawnNotice="Medusa and her assistants are gone" PreNotice="Medusa will spawn in %d Minutes" />
 	</GroupSettings>
  
 	<SpotSettings>
@@ -75,14 +75,14 @@
  
 	<MonsterSettings>
 		<Group Index="0">
-			<Monster Index="560" Count="7" OverrideDefaultSettings="0" EventID="151" HP="150000" DamageMin="100" DamageMax="150" Defense="150" AttackRate="1000" DefenseRate="1000" />
-			<Monster Index="561" Count="1" OverrideDefaultSettings="0" EventID="150" HP="15000000" DamageMin="1000" DamageMax="1500" Defense="550" AttackRate="2000" DefenseRate="2000" />
+			<Monster Index="560" MoveRange="10" Count="7" OverrideDefaultSettings="1" EventID="151" HP="150000" DamageMin="100" DamageMax="150" Defense="150" AttackRate="1000" DefenseRate="1000" SendKillNotice="1" KillNotice="[MEDUSA] %s killed Medusa assistant!" />
+			<Monster Index="561" MoveRange="10" Count="1" OverrideDefaultSettings="1" EventID="150" HP="15000000" DamageMin="1000" DamageMax="1500" Defense="550" AttackRate="2000" DefenseRate="2000" SendKillNotice="1" KillNotice="[MEDUSA] %s killed Medusa!" />
 		</Group>
 	</MonsterSettings>
  
 	<SpawnSettings>
 		<Group Index="0">
-			<Spawn StartHour="15" StartMinute="0" AppearanceRate="100" />
+			<Spawn StartHour="11" StartMinute="8" AppearanceRate="100" />
 		</Group> 
 	</SpawnSettings>
 </MonsterGroupRegenSystem>

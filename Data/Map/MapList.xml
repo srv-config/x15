@@ -155,6 +155,10 @@
 		<Map Number="125" File="123_KuberaMine.att" />
 		<Map Number="126" File="123_KuberaMine.att" />
 		<Map Number="127" File="123_KuberaMine.att" />
+		<Map Number="128" File="128_AbyssOfAtlas1.att" />
+		<Map Number="129" File="129_AbyssOfAtlas2.att" />
+		<Map Number="130" File="130_AbyssOfAtlas3.att" />
+		<Map Number="131" File="131_ScorchedCanyon.att" />
 	</DefaultMaps>
 	
 	<CrywolfEventAttr>
