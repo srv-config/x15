@@ -828,4 +828,23 @@ function BatFlock_DotDamage(InDamage, Strength, Energy)
 	local Time = 3
 	
 	return Damage, DotDamage, Time
-end																			
+end
+
+function SlayerPierceAttackCalc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	return OutDamage
+end	
+
+function SlayerBatFlockCalc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.5
+	
+	return OutDamage
+end	
+		
+function SlayerSwordInertiaCalc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.16
+	
+	return OutDamage
+end																	

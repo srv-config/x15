@@ -1075,3 +1075,31 @@ function BatFlock_MasterLevel2_DotDamage(InDamage, Strength, Energy)
 	
 	return Damage, DotDamage, Time
 end
+
+function SlayerBatFlock_MasterLevel1_Calc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.5
+	
+	return OutDamage
+end	
+
+function SlayerBatFlock_MasterLevel2_Calc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.5
+	
+	return OutDamage
+end		
+	
+function SlayerSwordInertia_MasterLevel1_Calc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.16
+	
+	return OutDamage
+end	
+
+function SlayerSwordInertia_MasterLevel2_Calc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.16
+	
+	return OutDamage
+end	

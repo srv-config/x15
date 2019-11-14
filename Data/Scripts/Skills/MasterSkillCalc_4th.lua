@@ -218,3 +218,22 @@ function BatFlock_DotDamage_4thEnchant_Slayer(InDamage, Strength, Energy)
 	
 	return Damage, DotDamage, Time
 end
+
+function SwordInertia_4thEnchant_Slayer(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.16
+	
+	return OutDamage
+end	
+
+function BatFlock_4thEnchant_Slayer(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	OutDamage = OutDamage * 0.5
+	
+	return OutDamage
+end	
+
+function PierceAttack_4thEnchant_Slayer(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	return OutDamage
+end	
