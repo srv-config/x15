@@ -266,7 +266,7 @@
 		<Option ID="23" Number="4" Operator="2" Value="4" FormulaID="-1" ItemKindA="6" ItemKindB="62" Rate="3333" Name="Increase chance of True Damage by %d%%" />
 		<Option ID="24" Number="5" Operator="2" Value="4" FormulaID="-1" ItemKindA="6" ItemKindB="62" Rate="3334" Name="Increase chance of Double damage rate by %d%%" />
 		
-	<!--  -->
+	<!-- Wings of Power options -->
 		<Option ID="25" Number="3" Operator="2" Value="6" FormulaID="-1" ItemKindA="6" ItemKindB="80" Rate="3333" Name="Increase Life Recovery Rate by %d%%" />
 		<Option ID="26" Number="4" Operator="2" Value="6" FormulaID="-1" ItemKindA="6" ItemKindB="80" Rate="3333" Name="Increase chance to Deflect Enemy Defense by %d%%" />
 		<Option ID="27" Number="5" Operator="2" Value="6" FormulaID="-1" ItemKindA="6" ItemKindB="80" Rate="3334" Name="Increase chance of Double Damage by %d %%" />

@@ -21,11 +21,19 @@
 //	Count: Maximum daily entries count
 //
 // ### EventMapPoint::RewardCondition::Point ###
-//	Min: Minimum character level for actual rule
-//	Max: Maximum character level for acrual rule
+//	Min: Minimum point for actual range rule to apply for the reward
+//	Max: Maximum point for actual range rule to apply for the reward
 //	ItemCat: Reward tem category, see ItemList.xml
 //	ItemIndex: Reward tem index, see ItemList.xml
 //
+// ### EventMapPoint::RewardItemCount::Event ###
+//	Level: Level of event floor, 0-6
+//	CC: Number of mastery boxes to reward to Chaos Castle event at specified level
+//	BC: Number of mastery boxes to reward to Blood Castle event at specified level
+//	DS: Number of mastery boxes to reward to Devil Square event at specified level
+//	DG: Number of mastery boxes to reward to Doppelganger event at specified level
+//	IT: Number of mastery boxes to reward to Illussion Temple event at specified level
+
 // ### EventMapPoint::PointsReward::Event ###
 //	Type: Event type
 //		~ 0: Chaos Castle
@@ -58,6 +66,16 @@
 		<Point Min="401" Max="800" ItemCat="14" ItemIndex="283" />
 		<Point Min="801" Max="MAX" ItemCat="14" ItemIndex="284" />
 	</RewardCondition>
+	
+	<RewardItemCount>
+		<Event Level="0" CC="0" BC="0" DS="0" DG="0" IT="0" />
+		<Event Level="1" CC="1" BC="1" DS="1" DG="1" IT="1" />
+		<Event Level="2" CC="1" BC="1" DS="1" DG="1" IT="2" />
+		<Event Level="3" CC="1" BC="1" DS="1" DG="1" IT="2" />
+		<Event Level="4" CC="2" BC="2" DS="2" DG="2" IT="2" />
+		<Event Level="5" CC="2" BC="2" DS="2" DG="2" IT="-1" />
+		<Event Level="6" CC="2" BC="2" DS="2" DG="2" IT="-1" />
+	</RewardItemCount>
 	
 	<PointsReward>
 		<Event Type="0" MonsterKill="13" PlayerKill="50" Winning="99" Name="Chaos Castle" />

@@ -819,7 +819,7 @@ function WizardExpansionWizardryCalc(Class, Energy)
 	local SkillTime = 1800
 
 	return SkillEffect, SkillTime
-end		
+end
 
 -- SkillID: 293, Bat Flock - (Damage over time) - (Slayer, Royal Slayer, Master Slayer)
 function BatFlock_DotDamage(InDamage, Strength, Energy)
@@ -830,21 +830,33 @@ function BatFlock_DotDamage(InDamage, Strength, Energy)
 	return Damage, DotDamage, Time
 end
 
-function SlayerPierceAttackCalc(InDamage, Strength, Dexterity)
-	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
-	return OutDamage
-end	
-
+-- SkillID: 293, Bat Flock - (Damage) - (Slayer, Royal Slayer, Master Slayer)
 function SlayerBatFlockCalc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.5
 	
 	return OutDamage
-end	
-		
+end
+
+-- SkillID: 294, Pierce Attack - (Slayer, Royal Slayer, Master Slayer)
+function SlayerPierceAttackCalc(InDamage, Strength, Dexterity)
+	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
+	return OutDamage
+end
+
+-- SkillID: 292, Sword Inertia - (Slayer, Royal Slayer, Master Slayer)
 function SlayerSwordInertiaCalc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.16
 	
 	return OutDamage
-end																	
+end
+
+-- SkillID: 297, Demolish - (Slayer, Royal Slayer, Master Slayer)
+function SlayerDemolishCalc(Strength, Dexterity, Vitality, Energy)
+	local SkillEffect = ((Strength / 8) + (Dexterity / 28) + 120)
+	local SkillTime = 60
+	SkillEffect = SkillEffect * 0.03
+	
+	return SkillEffect, SkillTime
+end

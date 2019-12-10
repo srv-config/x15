@@ -38,10 +38,10 @@
 	</EventSchedule>
 
 	<EntryLevel>
-		<Temple Level="0" MinLevel="180" MaxLevel="299" /> <!-- Illussion Temple 1 -->
-		<Temple Level="1" MinLevel="300" MaxLevel="399" /> <!-- Illussion Temple 2 -->
-		<Temple Level="2" MinLevel="400" MaxLevel="599" /> <!-- Illussion Temple 3 -->
-		<Temple Level="3" MinLevel="600" MaxLevel="769" /> <!-- Illussion Temple 4 -->
-		<Temple Level="4" MinLevel="770" MaxLevel="MAX" /> <!-- Illussion Temple 5 -->
+		<Temple Level="0" MinLevel="180" MaxLevel="399" /> <!-- Illussion Temple 1 -->
+		<Temple Level="1" MinLevel="400" MaxLevel="599" /> <!-- Illussion Temple 2 -->
+		<Temple Level="2" MinLevel="600" MaxLevel="799" /> <!-- Illussion Temple 3 -->
+		<Temple Level="3" MinLevel="800" MaxLevel="999" /> <!-- Illussion Temple 4 -->
+		<Temple Level="4" MinLevel="1000" MaxLevel="MAX" /> <!-- Illussion Temple 5 -->
 	</EntryLevel>
 </IllusionTempleRenewal>

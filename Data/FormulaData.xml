@@ -190,27 +190,27 @@
 		<Formula ID="70" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
 		<Formula ID="71" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
 		<Formula ID="72" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="73" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="74" Data="((((((6+%d)^2)/10)*5)/7)*5*8)" /> <!-- SkillPoint -->
-		<Formula ID="75" Data="((((((5.85+%d)^2)/10)*5)/5)*3)" /> <!-- SkillPoint -->
+		<Formula ID="73" Data="(87+((%d*6.5)^1.6))" /> <!-- SkillPoint -->
+		<Formula ID="74" Data="((((((5.85+%d)^2)/10)*5)/5)*3)+15" /> <!-- SkillPoint -->
+		<Formula ID="75" Data="(140+((%d*18)^1.265))" /> <!-- SkillPoint -->
 		<Formula ID="76" Data="((((((7+%d)^2)/10)*5)/7)*4*7)" /> <!-- SkillPoint -->
 		<Formula ID="77" Data="((((((7+%d)^2)/10)*5)/9.8)*5)/10" /> <!-- SkillPoint -->
 		<Formula ID="78" Data="%d*1" /> <!-- SkillPoint -->
 		<Formula ID="79" Data="%d*1" /> <!-- SkillPoint -->
 		<Formula ID="80" Data="%d*1" /> <!-- SkillPoint -->
-		<Formula ID="81" Data="%d*1" /> <!-- SkillPoint -->
-		<Formula ID="82" Data="((((((7+%d)^2)/10)*5)/7)*5*7)" /> <!-- SkillPoint -->
-		<Formula ID="83" Data="((((((7.11+%d)^2)/10)*5)/98)*4)" /> <!-- SkillPoint -->
-		<Formula ID="84" Data="((((((8+%d)^2)/10)*5)/7)*4*6)" /> <!-- SkillPoint -->
-		<Formula ID="85" Data="%d/5" /> <!-- SkillPoint -->
-		<Formula ID="86" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="87" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="88" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="89" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)" /> <!-- SkillPoint -->
-		<Formula ID="90" Data="%d*0.5" /> <!-- SkillPoint -->
-		<Formula ID="91" Data="((((((20+%d)^2)/15)*10)/213.3)*2)" /> <!-- SkillPoint -->
-		<Formula ID="92" Data="((((((20+%d)^2)/15)*10)/213.3)*2)" /> <!-- SkillPoint -->
-		<Formula ID="93" Data="((((((20+%d)^2)/15)*10)/213.3)*2)" /> <!-- SkillPoint -->
+		<Formula ID="81" Data="(125+((%d*7.5)^1.5))" /> <!-- SkillPoint -->
+		<Formula ID="82" Data="0.91+(%d*0.278)^1.3" /> <!-- SkillPoint -->
+		<Formula ID="83" Data="(96+((%d*21.9)^1.2))" /> <!-- SkillPoint -->
+		<Formula ID="84" Data="%d/5" /> <!-- SkillPoint -->
+		<Formula ID="85" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="86" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="87" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="88" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="89" Data="%d*0.5" /> <!-- SkillPoint -->
+		<Formula ID="90" Data="0.94+(%d*0.3)^1.23" /> <!-- SkillPoint -->
+		<Formula ID="91" Data="0.94+(%d*0.3)^1.23" /> <!-- SkillPoint -->
+		<Formula ID="92" Data="0.94+(%d*0.3)^1.23" /> <!-- SkillPoint -->
+		<Formula ID="93" Data="0.94+(%d*0.3)^1.23" /> <!-- SkillPoint -->
 		<Formula ID="94" Data="((((((20+%d)^2)/15)*10)/213.3)*2)" /> <!-- SkillPoint -->
 		<Formula ID="95" Data="((((((4+%d)^2)/10)*5)/7)*5*8)" /> <!-- SkillPoint -->
 		<Formula ID="96" Data="((((((5.9+%d)^2)/10)*5)/10)*3)" /> <!-- SkillPoint -->
@@ -219,9 +219,9 @@
 		<Formula ID="99" Data="%d*1" /> <!-- SkillPoint -->
 		<Formula ID="100" Data="%d*1" /> <!-- SkillPoint -->
 		<Formula ID="101" Data="%d*1" /> <!-- SkillPoint -->
-		<Formula ID="102" Data="%d*1" /> <!-- SkillPoint -->
-		<Formula ID="103" Data="((((((5+%d)^2)/10)*5)/7)*5*8)" /> <!-- SkillPoint -->
-		<Formula ID="104" Data="((((((5.56+%d)^2)/10)*5)/98)*3)" /> <!-- SkillPoint -->
+		<Formula ID="102" Data="(108+((%d*5.1)^1.5))" /> <!-- SkillPoint -->
+		<Formula ID="103" Data="0.83+(%d*0.278)^1.25" /> <!-- SkillPoint -->
+		<Formula ID="104" Data="(95+((%d*14)^1.2))" /> <!-- SkillPoint -->
 		<Formula ID="105" Data="((((((6+%d)^2)/10)*5)/7)*4*6)" /> <!-- SkillPoint -->
 		<Formula ID="106" Data="%d/10" /> <!-- SkillPoint -->
 		<Formula ID="107" Data="((((((20+%d)^2)/15)*5)/213.3)*2)" /> <!-- SkillPoint -->
@@ -255,17 +255,17 @@
 		<Formula ID="135" Data="((((((3+%d)^2)/10)*5)/7)*4)" /> <!-- SkillPoint -->
 		<Formula ID="136" Data="((((((23+%d)^2)/10)*5)/7)*4)" /> <!-- SkillPoint -->
 		<Formula ID="137" Data="((((((12+%d)^2)/10)*5)/7)*4)" /> <!-- SkillPoint -->
-		<Formula ID="138" Data="((((((1+%d)^2)/10)*5)/7)*4)" /> <!-- SkillPoint -->
-		<Formula ID="139" Data="(((((%d*%d)*1.8)/11.52)+((%d-800)*(%d*1.876)/100))/4)" /> <!-- SkillPoint, SkillPoint, SkillPoint, SkillPoint -->
-		<Formula ID="140" Data="(((((%d*%d)*1.8)/11.52)+((%d-800)*(%d*1.876)/100))/4)" /> <!-- SkillPoint, SkillPoint, SkillPoint, SkillPoint -->
-		<Formula ID="141" Data="(((((%d*%d)*1.8)/11.52)+((%d-800)*(%d*1.876)/100))/4)" /> <!-- SkillPoint, SkillPoint, SkillPoint, SkillPoint -->
-		<Formula ID="142" Data="(((((%d*%d)*1.8)/11.52)+((%d-800)*(%d*1.876)/100))/4)" /> <!-- SkillPoint, SkillPoint, SkillPoint, SkillPoint -->
-		<Formula ID="143" Data="((((((13+%d)^2)/10)*5)/7)*4*80.35)" /> <!-- SkillPoint -->
-		<Formula ID="144" Data="((((((13+%d)^2)/10)*5)/7)*4*80.35)" /> <!-- SkillPoint -->
-		<Formula ID="145" Data="((((((13+%d)^2)/10)*5)/7)*4*80.35)" /> <!-- SkillPoint -->
-		<Formula ID="146" Data="((((((13+%d)^2)/10)*5)/7)*4*80.35)" /> <!-- SkillPoint -->
-		<Formula ID="147" Data="30/%d" /> <!-- SkillPoint -->
-		<Formula ID="148" Data="((((((15+%d)^2)/10)*5)/30)*5.76)" /> <!-- SkillPoint -->
+		<Formula ID="138" Data="(25000+((%d-800)*25))+((%d+%d+%d)*0)" /> <!-- SkillPoint -->
+		<Formula ID="139" Data="(25000+((%d-800)*25))+((%d+%d+%d)*0)" /> <!-- SkillPoint -->
+		<Formula ID="140" Data="(25000+((%d-800)*25))+((%d+%d+%d)*0)" /> <!-- SkillPoint -->
+		<Formula ID="141" Data="(25000+((%d-800)*25))+((%d+%d+%d)*0)" /> <!-- SkillPoint -->
+		<Formula ID="142" Data="(((15+%d)^2.5))+1253" /> <!-- SkillPoint -->
+		<Formula ID="143" Data="(((15+%d)^2.5))+1253" /> <!-- SkillPoint -->
+		<Formula ID="144" Data="(((15+%d)^2.5))+1253" /> <!-- SkillPoint -->
+		<Formula ID="145" Data="(((15+%d)^2.5))+1253" /> <!-- SkillPoint -->
+		<Formula ID="146" Data="10/%d" /> <!-- SkillPoint -->
+		<Formula ID="147" Data="10/%d" /> <!-- SkillPoint -->
+		<Formula ID="148" Data="10/%d" /> <!-- SkillPoint -->
 		<Formula ID="149" Data="((((((15+%d)^2)/10)*5)/245)*7.84)" /> <!-- SkillPoint -->
 		<Formula ID="150" Data="40/%d" /> <!-- SkillPoint -->
 		<Formula ID="151" Data="((((((%d*%d)*0.6/24)+(((%d-800)*(%d-500))/200))/24)+1500))" /> <!-- SkillPoint, SkillPoint, SkillPoint, SkillPoint -->
@@ -295,10 +295,10 @@
 		<Formula ID="175" Data="(1+(((((((%d-30)^3)+25000)/499)/6))))*33.3" /> <!-- SkillPoint -->
 		<Formula ID="176" Data="((((((4+%d)^1.6)/7)*5.5)/5.7)*5)" /> <!-- SkillPoint -->
 		<Formula ID="177" Data="((((((4+%d)^1.6)/7)*5.5)/5.5)*6)" /> <!-- SkillPoint -->
-		<Formula ID="178" Data="300" /> <!-- SkillPoint -->
-		<Formula ID="179" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)/75" /> <!-- SkillPoint -->
-		<Formula ID="180" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)/75" /> <!-- SkillPoint -->
-		<Formula ID="181" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)/75" /> <!-- SkillPoint -->
+		<Formula ID="178" Data="6.073+(%d*0.3)^1.47" /> <!-- SkillPoint -->
+		<Formula ID="179" Data="6.073+(%d*0.3)^1.47" /> <!-- SkillPoint -->
+		<Formula ID="180" Data="6.073+(%d*0.3)^1.47" /> <!-- SkillPoint -->
+		<Formula ID="181" Data="6.073+(%d*0.3)^1.47" /> <!-- SkillPoint -->
 		<Formula ID="182" Data="((((((20+%d)^2)/15)*7.5)/213.3)*4)/75" /> <!-- SkillPoint -->
 		<Formula ID="183" Data="%d/10" /> <!-- SkillPoint -->
 		<Formula ID="184" Data="%d/10" /> <!-- SkillPoint -->
@@ -311,34 +311,38 @@
 		<Formula ID="191" Data="%d/10" /> <!-- SkillPoint -->
 		<Formula ID="192" Data="%d/10" /> <!-- SkillPoint -->
 		<Formula ID="193" Data="%d/10" /> <!-- SkillPoint -->
-		<Formula ID="194" Data="%d/10" /> <!-- SkillPoint -->
-		<Formula ID="195" Data="(((%d*1.2)^1.6)+30)" /> <!-- SkillPoint -->
-		<Formula ID="196" Data="(((%d*1.1)^1.4)+25)" /> <!-- SkillPoint -->
-		<Formula ID="197" Data="(((%d*1.2)^1.6)+30)" /> <!-- SkillPoint -->
-		<Formula ID="198" Data="(((%d*1.1)^1.4)+25)" /> <!-- SkillPoint -->
-		<Formula ID="199" Data="(((%d*1.2)^1.6)+30)" /> <!-- SkillPoint -->
-		<Formula ID="200" Data="(((%d*1.1)^1.4)+25)" /> <!-- SkillPoint -->
-		<Formula ID="201" Data="(((%d*1.2)^1.6)+30)" /> <!-- SkillPoint -->
-		<Formula ID="202" Data="(((%d*1.1)^1.2)+20)" /> <!-- SkillPoint -->
-		<Formula ID="203" Data="(((%d*1.2)^1.4)+25)" /> <!-- SkillPoint -->
-		<Formula ID="204" Data="(((%d*1.1)^1.2)+20)" /> <!-- SkillPoint -->
-		<Formula ID="205" Data="(((%d*1.2)^1.4)+25)" /> <!-- SkillPoint -->
-		<Formula ID="206" Data="(((%d*1.1)^1.2)+20)" /> <!-- SkillPoint -->
-		<Formula ID="207" Data="%d/20" /> <!-- SkillPoint -->
-		<Formula ID="208" Data="%d/20" /> <!-- SkillPoint -->
-		<Formula ID="209" Data="%d/20" /> <!-- SkillPoint -->
-		<Formula ID="210" Data="(1+(((((((%d-30)^3)+25000)/499)/6))))*10" /> <!-- SkillPoint -->
-		<Formula ID="211" Data="(1+(((((((%d-30)^3)+25000)/499)/6))))*10" /> <!-- SkillPoint -->
+		<Formula ID="194" Data="(19.75+((%d^1.3)*5))" /> <!-- SkillPoint -->
+		<Formula ID="195" Data="(14.71+((%d^1.3)*4))" /> <!-- SkillPoint -->
+		<Formula ID="196" Data="(19.75+((%d^1.3)*5))" /> <!-- SkillPoint -->
+		<Formula ID="197" Data="(14.71+((%d^1.3)*4))" /> <!-- SkillPoint -->
+		<Formula ID="198" Data="(19.75+((%d^1.3)*5))" /> <!-- SkillPoint -->
+		<Formula ID="199" Data="(14.71+((%d^1.3)*4))" /> <!-- SkillPoint -->
+		<Formula ID="200" Data="(5.71+((%d^1.3)*4))" /> <!-- SkillPoint -->
+		<Formula ID="201" Data="(5.71+((%d^1.3)*4))" /> <!-- SkillPoint -->
+		<Formula ID="202" Data="(5.71+((%d^1.3)*4))" /> <!-- SkillPoint -->
+		<Formula ID="203" Data="(5.45+((%d^1.3)*3))" /> <!-- SkillPoint -->
+		<Formula ID="204" Data="(5.45+((%d^1.3)*3))" /> <!-- SkillPoint -->
+		<Formula ID="205" Data="(5.45+((%d^1.3)*3))" /> <!-- SkillPoint -->
+		<Formula ID="206" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="207" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="208" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="209" Data="7*%d" /> <!-- SkillPoint -->
+		<Formula ID="210" Data="7*%d" /> <!-- SkillPoint -->
+		<Formula ID="211" Data="7*%d" /> <!-- SkillPoint -->
 		<Formula ID="212" Data="(1+(((((((%d-30)^3)+25000)/499)/6))))*10" /> <!-- SkillPoint -->
 		<Formula ID="213" Data="(((((20+%d)^1.4)*2.402)/4.5))" /> <!-- SkillPoint -->
-		<Formula ID="214" Data="(1+(((((((%d-30)^3)+25000)/490)/50)*100)/15))*20" /> <!-- SkillPoint -->
-		<Formula ID="215" Data="%d*0" /> <!-- SkillPoint -->
-		<Formula ID="216" Data="%d*0" /> <!-- SkillPoint -->
-		<Formula ID="217" Data="%d*0" /> <!-- SkillPoint -->
-		<Formula ID="218" Data="%d*0" /> <!-- SkillPoint -->
-		<Formula ID="219" Data="%d*0" /> <!-- SkillPoint -->
+		<Formula ID="214" Data="(((15+%d)^2.55))+1843" /> <!-- SkillPoint -->
+		<Formula ID="215" Data="(((15+%d)^2.55))+1843" /> <!-- SkillPoint -->
+		<Formula ID="216" Data="(((15+%d)^2.55))+1843" /> <!-- SkillPoint -->
+		<Formula ID="217" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="218" Data="%d/10" /> <!-- SkillPoint -->
+		<Formula ID="219" Data="%d/10" /> <!-- SkillPoint -->
 		<Formula ID="220" Data="%d*0" /> <!-- SkillPoint -->
 		<Formula ID="221" Data="15/%d" /> <!-- SkillPoint -->
+		<Formula ID="222" Data="2100+((%d-30)*42)" /> <!-- SkillPoint -->
+		<Formula ID="223" Data="450+((%d-30)*9)" /> <!-- SkillPoint -->
+		<Formula ID="224" Data="390+((%d-30)*8)" /> <!-- SkillPoint -->
+		<Formula ID="225" Data="1500+((%d-30)*30)" /> <!-- SkillPoint -->
 	</SkillTree>
 	<SetOption>
 		<Formula ID="0" Data="((((%d*1.25)^1.48)+5)/1.1)" /> <!-- ItemLevel -->
@@ -432,4 +436,11 @@
 		<Formula ID="0" Data="(((%d*5)+70)/1.8)" /> <!-- ItemLevel -->
 		<Formula ID="1" Data="(((%d*5)+65)/1)" /> <!-- ItemLevel -->
 	</Earrings>
+	<Group11>
+		<Formula ID="0" Data="0" /> <!-- empty -->
+		<Formula ID="1" Data="%d-%d" /> <!--  -->
+		<Formula ID="2" Data="%d-%d" /> <!--  -->
+		<Formula ID="3" Data="%d-%d" /> <!--  -->
+		<Formula ID="4" Data="(%d*0)+100" /> <!--  -->
+	</Group11>
 </FormulaData>

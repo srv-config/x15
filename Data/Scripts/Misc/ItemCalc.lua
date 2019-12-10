@@ -69,6 +69,10 @@ function Wings_CalcAbsorb(WingID, WingLevel, MLS_WingOption)
 		OutAbsorb = (WingLevel * 2) + 43
 	elseif (WingID == MakeItemID(12,472) or WingID == MakeItemID(12,473)) then
 		OutAbsorb = (WingLevel * 2) + 39 + MLS_WingOption
+	elseif WingID == MakeItemID(12,474) then
+		OutAbsorb = (WingLevel * 2) + 43
+	elseif WingID == MakeItemID(12,480) then
+		OutAbsorb = 65
 	else
 		OutAbsorb = 12 + (WingLevel * 2)
 	end
@@ -105,14 +109,16 @@ function Wings_CalcIncAttack(WingID, WingLevel)
 		OutIncAttack = (WingLevel * 2) + 39
 	elseif (WingID == MakeItemID(12,130) or WingID == MakeItemID(12,135) or WingID == MakeItemID(12,278)) then
 		OutIncAttack = (WingLevel * 2) + 20
-	elseif (WingID >= MakeItemID(12,414) and WingID <= MakeItemID(12,421) or (WingID >= MakeItemID(12,438) and WingID <= MakeItemID(12,445))) then
+	elseif (WingID >= MakeItemID(12,414) and WingID <= MakeItemID(12,421) or (WingID >= MakeItemID(12,438) and WingID <= MakeItemID(12,445)) or WingID == MakeItemID(12,474)) then
 		OutIncAttack = WingLevel + 55
 	elseif (WingID >= MakeItemID(12,467) and WingID <= MakeItemID(12,468)) then
 		OutIncAttack = WingLevel + 55
-	elseif (WingID >= MakeItemID(12,469)) then
+	elseif (WingID == MakeItemID(12,469)) then
 		OutIncAttack = WingLevel + 55
 	elseif (WingID >= MakeItemID(12,472) and WingID <= MakeItemID(12,473)) then
 		OutIncAttack = (WingLevel * 2)  + 39
+	elseif WingID == MakeItemID(12,480) then
+		OutIncAttack = 65
 	else
 		OutIncAttack = (WingLevel * 2) + 12
 	end

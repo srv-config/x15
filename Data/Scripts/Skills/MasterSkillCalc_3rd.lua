@@ -1076,30 +1076,52 @@ function BatFlock_MasterLevel2_DotDamage(InDamage, Strength, Energy)
 	return Damage, DotDamage, Time
 end
 
+-- SkillID: 781, Bat Flock Strenghtener - (Damage) - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
 function SlayerBatFlock_MasterLevel1_Calc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.5
 	
 	return OutDamage
-end	
+end
 
+-- SkillID: 782, Bat Flock Mastery - (Damage) - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
 function SlayerBatFlock_MasterLevel2_Calc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.5
 	
 	return OutDamage
-end		
-	
+end
+
+-- SkillID: 779, Sword Inertia Strengthener - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
 function SlayerSwordInertia_MasterLevel1_Calc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.16
 	
 	return OutDamage
-end	
+end
 
+-- SkillID: 780, Sword Inertia Mastery - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
 function SlayerSwordInertia_MasterLevel2_Calc(InDamage, Strength, Dexterity)
 	local OutDamage = InDamage * ((Strength / 8) + (Dexterity / 28) + 120) / 100
 	OutDamage = OutDamage * 0.16
 	
 	return OutDamage
-end	
+end
+
+-- SkillID: 787, Demolish Strengthener - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
+function SlayerDemolish_MasterLevel1_Calc(Strength, Dexterity, Vitality, Energy, SkillTreeValue)
+	local SkillEffect = ((Strength / 8) + (Dexterity / 28) + 120)
+	local SkillTime = 60
+	SkillEffect = SkillEffect * 0.03 + SkillTreeValue
+	
+	return SkillEffect, SkillTime
+end
+
+-- SkillID: 788, Demolish Mastery - (Slayer, Royal Slayer, Master Slayer, Slaughterer)
+function SlayerDemolish_MasterLevel2_Calc(Strength, Dexterity, Vitality, Energy, SkillTreeValue)
+	local SkillEffect = ((Strength / 8) + (Dexterity / 28) + 120)
+	local SkillTime = 60
+	SkillEffect = SkillEffect * 0.03 + SkillTreeValue
+	
+	return SkillEffect, SkillTime
+end

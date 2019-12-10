@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-16"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 
 // ============================================================
 // == INTERNATIONAL GAMING CENTER NETWORK
@@ -336,11 +336,11 @@
 		<Buff Index="314" EffectType="283" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Wizardry/Curse Damage Increase" Description="Wizardry/Curse Damage Increase" />
 		<Buff Index="315" EffectType="297" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Bat Flock" Description="Bat take a damage every second" />
 		<Buff Index="316" EffectType="298" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Detection" Description="Temporarily detects the location of nearby creatures. Rresult remain for 1 minute" />
-		<Buff Index="317" EffectType="299" ItemType="255" ItemIndex="255" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish" Description="Ignores enemy's defense by %d when attacking." />
-		<Buff Index="318" EffectType="298" ItemType="255" ItemIndex="255" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Detection Strengthener" Description="Temporarily detects the location of nearby creatures. Rresult remain for 1 minute" />
-		<Buff Index="319" EffectType="299" ItemType="255" ItemIndex="255" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish Strengthener" Description="Ignores enemy's defense by %d when attacking." />
-		<Buff Index="320" EffectType="299" ItemType="255" ItemIndex="255" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish Mastery" Description="Ignores enemy's defense by %d when attacking." />
-		<Buff Index="321" EffectType="300" ItemType="255" ItemIndex="255" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="1" Name="Demolish - Reduces Attack Power" Description="" />
+		<Buff Index="317" EffectType="299" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish" Description="Ignores enemy's defense by %d when attacking." />
+		<Buff Index="318" EffectType="298" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="0" ClearType="1" BuffOutputValue="0" Name="Detection Strengthener" Description="Temporarily detects the location of nearby creatures. Rresult remain for 1 minute" />
+		<Buff Index="319" EffectType="299" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish Strengthener" Description="Ignores enemy's defense by %d when attacking." />
+		<Buff Index="320" EffectType="299" ItemType="-1" ItemIndex="-1" Type="0" NoticeType="1" ClearType="1" BuffOutputValue="1" Name="Demolish Mastery" Description="Ignores enemy's defense by %d when attacking." />
+		<Buff Index="321" EffectType="300" ItemType="-1" ItemIndex="-1" Type="1" NoticeType="0" ClearType="1" BuffOutputValue="1" Name="Demolish - Reduces Attack Power" Description="" />
 	</General>
 	<Period>
 		<Buff Index="179" EffectType1="0" EffectValue1="25" EffectType2="0" EffectValue2="0" Duration="604800" Name="Fire Tower" />
