@@ -24,6 +24,7 @@
 //		~ 6: Rage Fighter
 //		~ 7: Grow Lancer
 //		~ 8: Rune Wizard
+//		~ 9: Slayer
 //
 //	StaminaCost: Stamina cost, expressed in percentage
 //
@@ -112,5 +113,12 @@
 		<Skill Pos="0" SkillId="283" /> <!-- Magic Arrow -->
 		<Skill Pos="1" SkillId="284" /> <!-- Plasma ball -->
 		<Skill Pos="1" SkillId="285" /> <!-- Lightning Storm -->
+	</Class>
+	
+	<Class Id="9" StaminaCost="5" ComboTriggerCount="3"> <!-- Slayer -->
+		<Skill Pos="0" SkillId="294" /> <!-- Pierce Attack -->
+		<Skill Pos="1" SkillId="293" /> <!-- Bat Flock -->
+		<Skill Pos="1" SkillId="41" /> <!-- Twisting Slash -->
+		<Skill Pos="1" SkillId="42" /> <!-- Pierce Attack -->
 	</Class>
 </ComboSettings>

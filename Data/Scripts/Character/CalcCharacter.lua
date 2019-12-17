@@ -625,7 +625,7 @@ function ElementalDefenseCalc(Class, Dexterity)
 	return Defense
 end
 
--- Only for Dark Knight, Magic Gladiator
+-- Only for Dark Knight, Magic Gladiator, Slayer
 function CalcTwoSameWeaponBonus(AtkMinLeft, AtkMaxLeft, AtkMinRight, AtkMaxRight, Class)
 	local OutDamageMinLeft = 0
 	local OutDamageMaxLeft = 0
@@ -640,7 +640,7 @@ function CalcTwoSameWeaponBonus(AtkMinLeft, AtkMaxLeft, AtkMinRight, AtkMaxRight
 	return OutDamageMinLeft, OutDamageMinRight, OutDamageMaxLeft, OutDamageMaxRight
 end
 
--- Only for Dark Knight, Magic Gladiator and Dark Lord
+-- Only for Dark Knight, Magic Gladiator, Slayer and Dark Lord
 function CalcTwoDifferentWeaponBonus(AtkMinLeft, AtkMaxLeft, AtkMinRight, AtkMaxRight, Class)
 	local OutDamageMinLeft = 0
 	local OutDamageMaxLeft = 0

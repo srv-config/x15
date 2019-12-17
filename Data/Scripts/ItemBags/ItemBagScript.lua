@@ -225,9 +225,9 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,392),0, 'Item_(14,392,0)_Card_Box') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,393),0, 'Item_(14,393,0)_Card_Box_(10)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,398),0, 'Item_(14,398,0)_Elemental_Talisman_Box') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,400),0, 'Item_(14,400,0)_Ruud Box_(10)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,401),0, 'Item_(14,401,0)_Ruud Box_(50)') -- DropFunction /4/
-	AddItemBag(BAG_INVENTORY, MakeItemID(14,402),0, 'Item_(14,402,0)_Ruud Box_(100)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,400),0, 'Item_(14,400,0)_Ruud_Box_(10)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,401),0, 'Item_(14,401,0)_Ruud_Box_(50)') -- DropFunction /4/
+	AddItemBag(BAG_INVENTORY, MakeItemID(14,402),0, 'Item_(14,402,0)_Ruud_Box_(100)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,403),0, 'Item_(14,403,0)_Labyrinth_Box_(Lower)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,404),0, 'Item_(14,404,0)_Labyrinth_Box_(Medium)') -- DropFunction /4/
 	AddItemBag(BAG_INVENTORY, MakeItemID(14,405),0, 'Item_(14,405,0)_Labyrinth_Box_(Higher)') -- DropFunction /4/
