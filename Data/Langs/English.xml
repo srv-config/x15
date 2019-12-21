@@ -793,8 +793,6 @@
 		<Msg ID="766" Text="Awakening failure, Awakening Monster is in compensation status." />
 		<Msg ID="767" Text="Awakening is not a monster with a failure or permission relationship." />
 		<Msg ID="768" Text="%s has earned %s." />
-		<Msg ID="769" Text="Max level for warping to specified location is %d." />
-		<Msg ID="770" Text="Obtained %s %d" />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
@@ -915,5 +913,9 @@
 		<Msg ID="125" Text="Kubera Mine (Earth)" />
 		<Msg ID="126" Text="Kubera Mine (Wind)" />
 		<Msg ID="127" Text="Kubera Mine (Darkness)" />
+		<Msg ID="128" Text="Abyss of Atlas 1" />
+		<Msg ID="129" Text="Abyss of Atlas 2" />
+		<Msg ID="130" Text="Abyss of Atlas 3" />
+		<Msg ID="131" Text="Scorched Canyon" />
 	</Map>
 </Language>
