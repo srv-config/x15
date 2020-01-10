@@ -61,7 +61,7 @@
 -->
 
 <DevilSquare_Classic Enable="1" MaxPlayerPerRoom="15">
-	<Time Close="35" ToOpen="5" PlayDuration="20" />
+	<Time Close="5" ToOpen="1" PlayDuration="20" />
 
 	<Schedule>
 		<Start Hour="3" Minute="20" />
@@ -71,7 +71,7 @@
 		<Start Hour="9" Minute="20" />
 		<Start Hour="11" Minute="20" />
 		<Start Hour="13" Minute="20" />
-		<Start Hour="15" Minute="20" />
+		<Start Hour="15" Minute="23" />
 		<Start Hour="17" Minute="20" />
 		<Start Hour="19" Minute="20" />
 		<Start Hour="21" Minute="20" />
@@ -106,40 +106,40 @@
 		<Square Level="0" MonsterIndex="9"	 SpawnStartTime="5"	 SpawnEndTime="14"	Name="Thunder Lich" />
 		<Square Level="0" MonsterIndex="36"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Shadow" />
 	<!-- Devil Square 2 -->
-		<Square Level="2" MonsterIndex="294" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Ax Warrior" />
-		<Square Level="2" MonsterIndex="60"	 SpawnStartTime="0"	 SpawnEndTime="7"	Name="Bloody Wolf" />
-		<Square Level="2" MonsterIndex="190" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Death Angel 4" />
-		<Square Level="2" MonsterIndex="71" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Mega Crust" />
-		<Square Level="2" MonsterIndex="61"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Beam Knight" />
-		<Square Level="2" MonsterIndex="73"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Drakan" />
+		<Square Level="1" MonsterIndex="294" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Ax Warrior" />
+		<Square Level="1" MonsterIndex="60"	 SpawnStartTime="0"	 SpawnEndTime="7"	Name="Bloody Wolf" />
+		<Square Level="1" MonsterIndex="190" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Death Angel 4" />
+		<Square Level="1" MonsterIndex="71" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Mega Crust" />
+		<Square Level="1" MonsterIndex="61"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Beam Knight" />
+		<Square Level="1" MonsterIndex="73"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Drakan" />
 	<!-- Devil Square 3 -->
-		<Square Level="3" MonsterIndex="290" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Lizard Warrior" />
-		<Square Level="3" MonsterIndex="57"	 SpawnStartTime="0"	 SpawnEndTime="7"	Name="Iron Wheel" />
-		<Square Level="3" MonsterIndex="70"	 SpawnStartTime="5"	 SpawnEndTime="14"	Name="Queen Rainier" />
-		<Square Level="3" MonsterIndex="293" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Poison Golem" />
-		<Square Level="3" MonsterIndex="74"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Alpha Crust" />
-		<Square Level="3" MonsterIndex="292" SpawnStartTime="12" SpawnEndTime="20"	Name="Queen Bee" />
+		<Square Level="2" MonsterIndex="290" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Lizard Warrior" />
+		<Square Level="2" MonsterIndex="57"	 SpawnStartTime="0"	 SpawnEndTime="7"	Name="Iron Wheel" />
+		<Square Level="2" MonsterIndex="70"	 SpawnStartTime="5"	 SpawnEndTime="14"	Name="Queen Rainier" />
+		<Square Level="2" MonsterIndex="293" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Poison Golem" />
+		<Square Level="2" MonsterIndex="74"	 SpawnStartTime="12" SpawnEndTime="20"	Name="Alpha Crust" />
+		<Square Level="2" MonsterIndex="292" SpawnStartTime="12" SpawnEndTime="20"	Name="Queen Bee" />
 	<!-- Devil Square 4 -->
-		<Square Level="4" MonsterIndex="434" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Gigantis" />
-		<Square Level="4" MonsterIndex="435" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Berserker" />
-		<Square Level="4" MonsterIndex="553" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Berserker Warrior" />
-		<Square Level="4" MonsterIndex="360" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Dreadfear" />
-		<Square Level="4" MonsterIndex="557" SpawnStartTime="12" SpawnEndTime="20"	Name="Sapi Queen" />
-		<Square Level="4" MonsterIndex="556" SpawnStartTime="12" SpawnEndTime="20"	Name="Genocider Warrior" />
+		<Square Level="3" MonsterIndex="434" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Gigantis" />
+		<Square Level="3" MonsterIndex="435" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Berserker" />
+		<Square Level="3" MonsterIndex="553" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Berserker Warrior" />
+		<Square Level="3" MonsterIndex="360" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Dreadfear" />
+		<Square Level="3" MonsterIndex="557" SpawnStartTime="12" SpawnEndTime="20"	Name="Sapi Queen" />
+		<Square Level="3" MonsterIndex="556" SpawnStartTime="12" SpawnEndTime="20"	Name="Genocider Warrior" />
 	<!-- Devil Square 5 -->
-		<Square Level="5" MonsterIndex="449" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Blaze Napin" />
-		<Square Level="5" MonsterIndex="575" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Condra" />
-		<Square Level="5" MonsterIndex="312" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Bow Scout" />
-		<Square Level="5" MonsterIndex="313" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Werewolf" />
-		<Square Level="5" MonsterIndex="311" SpawnStartTime="12" SpawnEndTime="20"	Name="Lance Scout" />
-		<Square Level="5" MonsterIndex="310" SpawnStartTime="12" SpawnEndTime="20"	Name="Hammer Scout" />
+		<Square Level="4" MonsterIndex="449" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Blaze Napin" />
+		<Square Level="4" MonsterIndex="575" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Condra" />
+		<Square Level="4" MonsterIndex="312" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Bow Scout" />
+		<Square Level="4" MonsterIndex="313" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Werewolf" />
+		<Square Level="4" MonsterIndex="311" SpawnStartTime="12" SpawnEndTime="20"	Name="Lance Scout" />
+		<Square Level="4" MonsterIndex="310" SpawnStartTime="12" SpawnEndTime="20"	Name="Hammer Scout" />
 	<!-- Devil Square 6 -->
-		<Square Level="6" MonsterIndex="576" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Narcondra" />
-		<Square Level="6" MonsterIndex="574" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Crypos" />
-		<Square Level="6" MonsterIndex="360" SpawnStartTime="5"	 SpawnEndTime="14"	Name="DreadFear" />
-		<Square Level="6" MonsterIndex="553" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Berserker Warrior" />
-		<Square Level="6" MonsterIndex="556" SpawnStartTime="12" SpawnEndTime="20"	Name="Genocider Warrior" />
-		<Square Level="6" MonsterIndex="557" SpawnStartTime="12" SpawnEndTime="20"	Name="Sapi Queen" />
+		<Square Level="5" MonsterIndex="576" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Narcondra" />
+		<Square Level="5" MonsterIndex="574" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Crypos" />
+		<Square Level="5" MonsterIndex="360" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Dread Fear" />
+		<Square Level="5" MonsterIndex="553" SpawnStartTime="5"	 SpawnEndTime="14"	Name="Berserker Warrior" />
+		<Square Level="5" MonsterIndex="556" SpawnStartTime="12" SpawnEndTime="20"	Name="Genocider Warrior" />
+		<Square Level="5" MonsterIndex="557" SpawnStartTime="12" SpawnEndTime="20"	Name="Sapi Queen" />
 	<!-- Devil Square 7 -->
 		<Square Level="6" MonsterIndex="551" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Bloody Golem" />
 		<Square Level="6" MonsterIndex="554" SpawnStartTime="0"	 SpawnEndTime="7"	Name="Kentauros Warrior" />
