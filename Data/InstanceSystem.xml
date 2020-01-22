@@ -16,12 +16,11 @@
 //	MapNumber: Map number to instantiate (copy)
 //	AvailableUser: Max user per instance
 //	AvailableMonster: Max monsters per instance
-//	InstanceMapBaseValue: Map start number for instance, instance creates maximum 1000 copies of a map
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <InstanceSystem>
-	<Instance Type="1" Name="Labyrinth" MapNumber="115" AvailableUser="1" AvailableMonster="10" InstanceMapBaseValue="5000" />
-	<Instance Type="2" Name="4th Quest" MapNumber="121" AvailableUser="5" AvailableMonster="10" InstanceMapBaseValue="6000" />
+	<Instance Type="1" Name="Labyrinth" MapNumber="115" AvailableUser="1" AvailableMonster="10" />
+	<Instance Type="2" Name="4th Quest" MapNumber="121" AvailableUser="5" AvailableMonster="10" />
 </InstanceSystem>

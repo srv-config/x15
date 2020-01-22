@@ -8,6 +8,9 @@
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
 //
+// ### PentagramSystem ###
+//	BlessingOfSpiritUseMinLevel: Minimum required level of Pentagram item to apply safe removal with use of Spirit of BlessingOfSpiritUseMinLevel
+//
 // ### PentagramSystem::Errtel ###
 //	ID: Incremental and Unique Index
 //	Rank: Rank of Errtel being mounted in the Pentagram
@@ -17,7 +20,7 @@
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<PentagramSystem>
+<PentagramSystem BlessingOfSpiritUseMinLevel="300">
 	<Errtel ID="0"  Rank="1" Level="0"  Rate="8000" />
 	<Errtel ID="1"  Rank="1" Level="1"  Rate="8000" />
 	<Errtel ID="2"  Rank="1" Level="2"  Rate="8000" />

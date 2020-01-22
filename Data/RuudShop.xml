@@ -160,7 +160,6 @@
 		<Item Cat="13" Index="382" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Gloves of Sealed Conquest -->
 		<Item Cat="2"  Index="22" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0"  Duration="0" Price="100000" /> <!-- Bloodangel Scepter -->
 		<Item Cat="12" Index="303" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Scroll of Wind Soul -->
-		<Item Cat="15" Index="45" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Deathside Parchment -->
 	</Character>
 	<Character Class="5" Name="Summoner">
 		<Item Cat="13" Index="387" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Armor of Sealed Honor -->
@@ -171,6 +170,7 @@
 		<Item Cat="5"  Index="57" Level="0" Skill="0" Luck="-1" Option="0" Exc="-10" SetItem="0" SocketCount="0" Element="0"  Duration="0" Price="100000" /> <!-- Book of Bloodangel -->
 		<Item Cat="12" Index="295" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Parchment of Fire Beast -->
 		<Item Cat="12" Index="296" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Parchment of Aqua Beast -->
+		<Item Cat="15" Index="45" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="1000" /> <!-- Deathside Parchment -->
 	</Character>
 	<Character Class="6" Name="Rage Fighter">
 		<Item Cat="13" Index="391" Level="0" Skill="0" Luck="0" Option="0" Exc="-1" SetItem="0" SocketCount="0" Element="0" Duration="0" Price="50000" /> <!-- Bloodangel Armor of Sealed Destruction -->

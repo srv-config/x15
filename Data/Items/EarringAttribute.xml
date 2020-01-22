@@ -61,6 +61,9 @@
 //	Value: Value of option
 //	Edition: Edition option applies to
 //	Description: Option description
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For options of Edition=2, index 4 and 6, the Value attribute stores FormulaID from FormulaData.xml, earrings section
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
@@ -68,6 +71,7 @@
 <EarringAttribute>
 	<EditionSettings>
 		<Edition ID="1" OptionRate1="20" OptionRate2="40" OptionRate3="40" OptionRate4="0" OptionRate5="0" />
+		<Edition ID="2" OptionRate1="20" OptionRate2="40" OptionRate3="40" OptionRate4="0" OptionRate5="0" />
 	</EditionSettings>
 
 	<OptionLinkSettings>
