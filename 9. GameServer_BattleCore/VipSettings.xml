@@ -34,6 +34,7 @@
 //	DropBonus: Bonus added to base server item drop setting, percentage, max value in total: 100
 //	MasterExpBonus: Bonus for master characters added to base server master experience setting, float
 //	MajesticExpBonus: Bonus for majestic characters added to base server master experience setting, float
+//	OffLevelExp: Multiplier for Offline Levelling players, float
 //	MasterDropBonus: Bonus for master characters added to base server item drop setting, max value in total: 100
 //
 // ### VipSystem::VipTypes::Vip::Night ### - rates applied during night hours
@@ -41,6 +42,7 @@
 //	DropBonus: Bonus added to base server item drop setting, max value in total: 100
 //	MasterExpBonus: Bonus for master characters added to base server master experience, float
 //	MajesticExpBonus: Bonus for majestic characters added to base server master experience setting, float
+//	OffLevelExp: Multiplier for Offline Levelling players, float
 //	MasterDropBonus: Bonus for master characters added to base server item drop setting, max value in total: 100
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -105,8 +107,8 @@
 	
 	<VipTypes>	
 		<Vip Type="1" Name="Bronze" ML_MonsterMinLevel="95" PointPerReset="250" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
-			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
-			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
+			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
+			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
 			
 			<ChaosBoxMixRates>
 				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
@@ -117,8 +119,8 @@
 			</ChaosBoxMixRates>
 		</Vip>
 		<Vip Type="2" Name="Silver" ML_MonsterMinLevel="95" PointPerReset="300" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
-			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
-			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
+			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
+			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
 			
 			<ChaosBoxMixRates>
 				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
@@ -129,8 +131,8 @@
 			</ChaosBoxMixRates>
 		</Vip>
 		<Vip Type="3" Name="Gold" ML_MonsterMinLevel="95" PointPerReset="350" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
-			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
-			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
+			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
+			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
 			
 			<ChaosBoxMixRates>
 				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
@@ -141,8 +143,8 @@
 			</ChaosBoxMixRates>
 		</Vip>
 		<Vip Type="4" Name="Platinum" ML_MonsterMinLevel="95" PointPerReset="400" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
-			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
-			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" />
+			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
+			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" OffLevelExp="1.0" />
 			
 			<ChaosBoxMixRates>
 				<Normal Level10="60" Level11="60" Level12="60" Level13="55" Level14="55" Level15="50" AddLuck="25" />
