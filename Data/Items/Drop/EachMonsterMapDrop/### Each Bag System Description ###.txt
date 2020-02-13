@@ -26,12 +26,12 @@
 //	MaxLevel: Maximum item level to drop, 0-15
 //	Durability: durability of item to drop, 0 indicates automatically generated valid durability
 //	Skill:
-//		~ -1: random with 50% chance
+//		~ -1: random, based on ItemSkillRate/ExcItemSkillRate setting from ItemDropControl.ini
 //		~ 0: no skill
 //		~ 1: with skill
 //
 //	Luck:
-//		~ -1: random with 50% chance
+//		~ -1: random, based on ItemLuckRate/ExcItemLuckRate setting from ItemDropControl.ini
 //		~ 0: no luck
 //		~ 1: with luck
 //
