@@ -34,7 +34,7 @@
 //	DropBonus: Bonus added to base server item drop setting, percentage, max value in total: 100
 //	MasterExpBonus: Bonus for master characters added to base server master experience setting, float
 //	MajesticExpBonus: Bonus for majestic characters added to base server master experience setting, float
-//	OffLevelExp: Multiplier for Offline Levelling players, float
+//	OffLevelExp: Multiplier of VIP exp bonus for players in Offline Levelling mode, float
 //	MasterDropBonus: Bonus for master characters added to base server item drop setting, max value in total: 100
 //
 // ### VipSystem::VipTypes::Vip::Night ### - rates applied during night hours

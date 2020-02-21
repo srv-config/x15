@@ -60,7 +60,7 @@
 	</Monster>
 	
 	<Monster EventLevel="6" MapNumber="32"> <!-- Level 7 -->
-		<Spawn Index="832" Distance="30" StartX="50" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Bahamut of Abyss -->
-		<Spawn Index="833" Distance="30" StartX="50" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Vepar of Abyss -->
+		<Spawn Index="812" Distance="30" StartX="50" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Mine Porter -->
+		<Spawn Index="775" Distance="30" StartX="50" StartY="138" EndX="79" EndY="173" Dir="-1" Count="35" /> <!-- Deep Dungeon Thunder Lich -->
 	</Monster>
 </DevilSquare_Classic>

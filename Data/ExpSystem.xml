@@ -11,17 +11,17 @@
 // ### ExpSystem ###
 //	CalcType: Defines formula ID used in ExpCalc.lua -> ExpSystemCalc function, default configuration offers below formulas:
 //		0: Static exp only
-//				~ (StaticExp + (EventExp + VipExp + BonusEvent + MapBonusExp)) * OffLevelExp
+//				~ StaticExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
 //		1: Static plus Dynamic
-//				~ (StaticExp + DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)) * OffLevelExp
+//				~ StaticExp + DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
 //		2: Static multiply Dynamic plus Bonus
-//				~ (StaticExp * DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)) * OffLevelExp
+//				~ StaticExp * DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
 //		3: Dynamic only
-//				~ (DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)) * OffLevelExp
+//				~ DynamicExp + (EventExp + VipExp + BonusEvent + MapBonusExp)
 //		4: (Static plus Bonus) multiply Dynamic
-//				~ ((StaticExp + EventExp + VipExp + BonusEvent + MapBonusExp) * DynamicExp) * OffLevelExp
+//				~ (StaticExp + EventExp + VipExp + BonusEvent + MapBonusExp) * DynamicExp
 //		5: (Static plus Dynamic) multiply VipExp
-//				~ ((StaticExp + DynamicExp + EventExp + BonusEvent + MapBonusExp) * VipExp) * OffLevelExp
+//				~ (StaticExp + DynamicExp + EventExp + BonusEvent + MapBonusExp) * VipExp
 //
 //	NonVipAdjuster: Value used to adjust experience multiplier for non VIP players, use wisely.
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,7 +42,7 @@
 //	Majestic: The majestic experience multiplier, fourth character class of minimum level of "MaxMasterLevelFor3rdClass", float
 //	Event: The event experience bonus, float
 //	Quest: The quest experience multiplier (quests received from Quests System), float
-//	OffLevelExp: Offline Levelling experience multiplier, if not owning the plugin it is always 1.0
+//	OffLevel: Multiplier of StaticExp for players in Offline Levelling mode, if not owning the plugin it is always 1.0
 //
 // ### ExpSystem::PartyRegAddExp ###
 //	One: Party AddExp value for regular party of one member
@@ -74,7 +74,7 @@
 //	NormalExp: Regular experience multiplier
 //	MasterExp: Master experience multiplier
 //	MajesticExp: Majestic experience multiplier
-//	OffLevelExp: Offline Levelling experience multiplier, if not owning the plugin it is always 1.0
+//	OffLevelExp: Multiplier of DynamicExp for players in Offline Levelling mode, if not owning the plugin it is always 1.0
 //
 // ### PremiumExpRangeList::Range ### ~ exp percentage value added upon use of premium items
 //	MinExpPercent: Minimum range value of exp gain percentage 

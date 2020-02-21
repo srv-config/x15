@@ -234,4 +234,9 @@ function GoldKundun_DropWing()
 	
 	return WingCount, WingExpireTime
 end
+
+function DarkHorse_CalcAbsorb(PetLevel)
+	local Absorb = (PetLevel + 30) / 2
+	return Absorb
+end
 		

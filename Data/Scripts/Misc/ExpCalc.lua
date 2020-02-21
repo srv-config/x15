@@ -47,22 +47,22 @@ function SetExpTable_Master(MasterLevel, MaxNormalLevel)
 	return Exp
 end
 
-function ExpSystemCalc(FormulaID, StaticExp, DynamicExp, EventExp, VipExp, BonusEvent, MapBonusExp, OffLevelExp)
+function ExpSystemCalc(FormulaID, StaticExp, DynamicExp, EventExp, VipExp, BonusEvent, MapBonusExp)
 	local Exp = 0
 
 -- The OffLevelExp is 1.0 when not having plugin purchased
 	if (FormulaID == 0) then
-		Exp = (StaticExp+(EventExp+VipExp+BonusEvent+MapBonusExp))*OffLevelExp;
+		Exp = StaticExp+(EventExp+VipExp+BonusEvent+MapBonusExp);
 	elseif (FormulaID == 1) then
-		Exp = (StaticExp+DynamicExp+(EventExp+VipExp+BonusEvent+MapBonusExp))*OffLevelExp;
+		Exp = StaticExp+DynamicExp+(EventExp+VipExp+BonusEvent+MapBonusExp);
 	elseif (FormulaID == 2) then
-		Exp = (StaticExp*DynamicExp+(EventExp+VipExp+BonusEvent+MapBonusExp))*OffLevelExp;
+		Exp = StaticExp*DynamicExp+(EventExp+VipExp+BonusEvent+MapBonusExp);
 	elseif (FormulaID == 3) then
-		Exp = (DynamicExp+(EventExp+VipExp+BonusEvent+MapBonusExp))*OffLevelExp;
+		Exp = DynamicExp+(EventExp+VipExp+BonusEvent+MapBonusExp);
 	elseif (FormulaID == 4) then
-		Exp = ((StaticExp+EventExp+VipExp+BonusEvent+MapBonusExp)*DynamicExp)*OffLevelExp;
+		Exp = (StaticExp+EventExp+VipExp+BonusEvent+MapBonusExp)*DynamicExp;
 	elseif (FormulaID == 5) then
-		Exp = ((StaticExp+DynamicExp+EventExp+BonusEvent+MapBonusExp)*VipExp)*OffLevelExp;
+		Exp = (StaticExp+DynamicExp+EventExp+BonusEvent+MapBonusExp)*VipExp;
 	end
 
 	return Exp;
