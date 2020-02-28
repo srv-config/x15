@@ -52,8 +52,8 @@
 //		~ 2: Preserve Luck from material item
 //	LuckRate: Luck chance rate (if Luck set to 1), n/10000
 //	SlotCreateType:
-//		~ 0: Random socket count based on SocketRateX
-//		~ 1: Keeps count of sockets from source material item, without saving Seeds inside the sockets
+//		~ 0: Keeps count of sockets from source material item, without saving Seeds inside the sockets
+//		~ 1: Random socket count based on SocketRateX
 //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Sum of Slotrate1-5 per record must be equal to 10000
