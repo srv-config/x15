@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 
 // type reward 0 - item, 1 - money, 2 - ruud
+// ItemDurability is optional attribute
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
-
 <MonsterSoulReward>
 	<Converter Level="1">
 		<Category Number="1">
