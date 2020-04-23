@@ -87,6 +87,9 @@
 	EVENTBAG_MSC_LEVEL3 = 74
 	EVENTBAG_MSC_LEVEL4 = 75
 	EVENTBAG_MSC_LEVEL5 = 76
+	EVENTBAG_IWC_GM = 77
+	EVENTBAG_IWC_MEMBER = 78
+	EVENTBAG_IWC_PLAYER = 79
 	
 -- Define Item Kind A values
 	ITEM_KIND_A_COMMON = 0
@@ -381,6 +384,12 @@ function LoadItemBag() -- Bags Load
 -- Bags for purpose of Monster Group Regen System
 	AddItemBag(BAG_EVENT, 150,0, 'Event_Monster_(561)_Medusa') -- DropFunction /3/ used when OverriteDefaultSettings from MonsterGroupRegen.xml is set to 1
 	AddItemBag(BAG_EVENT, 151,0, 'Event_Monster_(560)_Sapi_Queen') -- DropFunction /3/ used when OverriteDefaultSettings from MonsterGroupRegen.xml is set to 1
+	
+-- Ice Wind Castle Event
+	AddItemBag(BAG_EVENT, 77,0, 'Event_IWC_GuildMaster') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 78,0, 'Event_IWC_GuildMember') -- DropFunction /3/
+	AddItemBag(BAG_EVENT, 79,0, 'Event_IWC_Player') -- DropFunction /3/
+
 end
 
 -- ### /1/ Drop Item (using Item Bag Structure) ### --

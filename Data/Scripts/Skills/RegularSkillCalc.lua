@@ -393,8 +393,9 @@ end
 function SummonerBerserker(Energy)
 	local SkillEffectUP = (Energy / 30)
 	local SkillEffectDOWN = (Energy / 60)
+	local SkillTime = -10
 	
-	return SkillEffectUP, SkillEffectDOWN
+	return SkillEffectUP, SkillEffectDOWN, SkillTime
 end
 
 -- SkillID: 218, Berserker - Magic Damage - (Summoner, Bloody Summoner, Dimension Master)

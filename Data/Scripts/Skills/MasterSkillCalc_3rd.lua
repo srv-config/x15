@@ -700,16 +700,18 @@ end
 function SummonerBerserker_Level1(Energy)
 	local SkillEffectUP = (Energy / 30)
 	local SkillEffectDOWN = (Energy / 60)
+	local SkillTime = -10
 	
-	return SkillEffectUP, SkillEffectDOWN
+	return SkillEffectUP, SkillEffectDOWN, SkillTime
 end
 
 -- SkillID: 470, Berserker Proficiency - (Dimension Master)
 function SummonerBerserker_Level2(Energy)
 	local SkillEffectUP = (Energy / 30)
 	local SkillEffectDOWN = (Energy / 60)
+	local SkillTime = -10
 	
-	return SkillEffectUP, SkillEffectDOWN
+	return SkillEffectUP, SkillEffectDOWN, SkillTime
 end
 
 -- SkillID: 770, Darkness Strengthener - (Dimension Master)
@@ -870,6 +872,8 @@ function GrowLancerHarshStrike_Level2(InDamage, Strength, SkillTreeBonus, Barrag
 		OutDamage = (InDamage * 1.0) * (Strength / 10 + 97 + SkillTreeBonus) / 100.0
 	elseif (BarrageCount == 2) then
 		OutDamage = (InDamage * 1.1) * (Strength / 10 + 97 + SkillTreeBonus) / 100.0
+	elseif(BarrageCount == 3) then
+		OutDamage = (InDamage * 1.2) * (Strength / 10 + 97 + SkillTreeBonus) / 100.0
 	end
 
 	return OutDamage

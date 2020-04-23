@@ -189,7 +189,7 @@
 		<Option ID="3" 	Number="3" Operator="1"   Value="7"  FormulaID="-1" ItemKindA_1="1"  ItemKindA_2="2"   ItemKindA_3="14" ItemKindA_4="-1" Rate="5000" Name="Increase %d Attack (Wizardry) speed" />
 		<Option ID="4" 	Number="4" Operator="4"   Value="8"  FormulaID="-1" ItemKindA_1="1"  ItemKindA_2="2"   ItemKindA_3="14" ItemKindA_4="-1" Rate="5000" Name="Obtains (Life/%d) when monster is killed" />
 		<Option ID="5" 	Number="5" Operator="5"   Value="8"  FormulaID="-1" ItemKindA_1="1"  ItemKindA_2="2"   ItemKindA_3="14" ItemKindA_4="-1" Rate="5000" Name="Obtains (Mana/%d) when monster is killed" />
-		<Option ID="6" 	Number="6" Operator="100" Value="0"  FormulaID="0"  ItemKindA_1="14" ItemKindA_2="100" ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="%s increases by %.1f every 20Lv" />
+		<Option ID="6" 	Number="6" Operator="100" Value="2"  FormulaID="0"  ItemKindA_1="14" ItemKindA_2="100" ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="%s increases by %.1f every 20Lv" />
 		<Option ID="7" 	Number="7" Operator="100" Value="1"  FormulaID="1"  ItemKindA_1="14" ItemKindA_2="100" ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increased by %s %d" />
 		<Option ID="8" 	Number="0" Operator="2"   Value="4"  FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increase Maximum Life by %d%%" />
 		<Option ID="9" 	Number="1" Operator="2"   Value="4"  FormulaID="-1" ItemKindA_1="3"  ItemKindA_2="4"   ItemKindA_3="-1" ItemKindA_4="-1" Rate="5000" Name="Increase Maximum Mana by %d%%" />
