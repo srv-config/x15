@@ -21,9 +21,23 @@
 // ### LuckyItem::TicketItemList::List::Item ###
 //	Cat: Category of the reward item, see ItemList.xml
 //	Index: Index of the reward item, see ItemList.xml
-//	Skill: Determines item is coming with skill or not, 0/1
-//	Luck: Determines whether 50% chance for Luck option should be applied, 0/1
-//	Option: 
+//	Skill:
+//		-1: Random, 50/50%
+//		0: No Skill
+//		1: With Skill
+//	Luck:
+//		-1: Random, 50/50%
+//		0: No Luck
+//		1: With Luck
+//	Option:
+//		-2: Based on rates from ItemOptionDrawSettings section
+//		-1: Random, 1-7
+//		0: No option
+//		1-7: with option +4 to +28
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ For servers with max 16 option any higher option will be reduced to 16
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
 //	Exc:
 //		-1: No exc option
 //		-2: Random count of random options (based on rates from ExcellentOptions.xml)
@@ -107,62 +121,62 @@
 
 	<TicketItemList>
 		<List ID="1" Name="1st Lucky Helm Ticket">
-			<Item Cat="7" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="1" /> <!-- Scale Helm +Luck +Option (Class 1) -->
-			<Item Cat="7" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="4" /> <!-- Scale Helm +Luck +Option (Class 4) -->
-			<Item Cat="7" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="6" /> <!-- Scale Helm +Luck +Option (Class 6) -->
-			<Item Cat="7" Index="63" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="2" /> <!-- Silk Helm +Luck +Option (Class 2) -->
-			<Item Cat="7" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="0" /> <!-- Sphinx Helm + Luck +Option (Class 0) -->
-			<Item Cat="7" Index="65" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="5" /> <!-- Violent Wind Helm +Luck +Option (Class 5) -->
-			<Item Cat="7" Index="96" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="7" /> <!-- Robust Helm +Luck +Option (Class 7) -->
-			<Item Cat="7" Index="124" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="8" /> <!-- Rune Spink Mask +Luck +Option (Class 8) -->
-			<Item Cat="7" Index="186" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="9" /> <!-- Slayer Helm (B) +Luck +Option (Class 9) -->
+			<Item Cat="7" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Scale Helm +Luck +Option (Class 1) -->
+			<Item Cat="7" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Scale Helm +Luck +Option (Class 4) -->
+			<Item Cat="7" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Scale Helm +Luck +Option (Class 6) -->
+			<Item Cat="7" Index="63" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Silk Helm +Luck +Option (Class 2) -->
+			<Item Cat="7" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Sphinx Helm + Luck +Option (Class 0) -->
+			<Item Cat="7" Index="65" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Violent Wind Helm +Luck +Option (Class 5) -->
+			<Item Cat="7" Index="96" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Robust Helm +Luck +Option (Class 7) -->
+			<Item Cat="7" Index="124" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Spink Mask +Luck +Option (Class 8) -->
+			<Item Cat="7" Index="186" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Helm (B) +Luck +Option (Class 9) -->
 		</List>
 		<List ID="2" Name="1st Lucky Armor Ticket">
-			<Item Cat="8" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="1" /> <!-- Scale Armor +Luck +Option (Class 1) -->
-			<Item Cat="8" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="4" /> <!-- Scale Armor +Luck +Option (Class 4) -->
-			<Item Cat="8" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="6" /> <!-- Scale Armor +Luck +Option (Class 6) -->
-			<Item Cat="8" Index="63" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="2" /> <!-- Silk Armor +Luck +Option (Class 2) -->
-			<Item Cat="8" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="0" /> <!-- Sphinx Armor +Luck +Option (Class 0) -->
-			<Item Cat="8" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="3" /> <!-- Sphinx Armor +Luck + Option (Class 3) -->
-			<Item Cat="8" Index="65" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="5" /> <!-- Violent Wind Armor +Luck +Option (Class 5) -->
-			<Item Cat="8" Index="96" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="7" /> <!-- Robust Armor +Luck +Option (Class 7) -->
-			<Item Cat="8" Index="124" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="8" /> <!-- Rune Spink Armor +Luck +Option (Class 8) -->
-			<Item Cat="8" Index="186" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="9" /> <!-- Slayer Armor (B) +Luck +Option (Class 9) -->
+			<Item Cat="8" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Scale Armor +Luck +Option (Class 1) -->
+			<Item Cat="8" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Scale Armor +Luck +Option (Class 4) -->
+			<Item Cat="8" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Scale Armor +Luck +Option (Class 6) -->
+			<Item Cat="8" Index="63" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Silk Armor +Luck +Option (Class 2) -->
+			<Item Cat="8" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Sphinx Armor +Luck +Option (Class 0) -->
+			<Item Cat="8" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Sphinx Armor +Luck + Option (Class 3) -->
+			<Item Cat="8" Index="65" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Violent Wind Armor +Luck +Option (Class 5) -->
+			<Item Cat="8" Index="96" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Robust Armor +Luck +Option (Class 7) -->
+			<Item Cat="8" Index="124" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Spink Armor +Luck +Option (Class 8) -->
+			<Item Cat="8" Index="186" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Armor (B) +Luck +Option (Class 9) -->
 		</List>
 		<List ID="3" Name="1st Lucky Pants Ticket">
-			<Item Cat="9" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="1" /> <!-- Scale Pants +Luck +Option (Class 1) -->
-			<Item Cat="9" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="4" /> <!-- Scale Pants +Luck +Option (Class 4) -->
-			<Item Cat="9" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="6" /> <!-- Scale Pants +Luck +Option (Class 6) -->
-			<Item Cat="9" Index="63" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="2" /> <!-- Silk Pants +Luck +Option (Class 2) -->
-			<Item Cat="9" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="0" /> <!-- Sphinx Pants +Luck +Option (Class 0) -->
-			<Item Cat="9" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="3" /> <!-- Sphinx Pants +Luck + Option (Class 3) -->
-			<Item Cat="9" Index="65" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="5" /> <!-- Violent Wind Pants +Luck +Option (Class 5) -->
-			<Item Cat="9" Index="96" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="7" /> <!-- Robust Pants +Luck +Option (Class 7) -->
-			<Item Cat="9" Index="124" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="8" /> <!-- Rune Spink Pants +Luck +Option (Class 8) -->
-			<Item Cat="9" Index="186" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="9" /> <!-- Slayer Pants (B) +Luck +Option (Class 9) -->
+			<Item Cat="9" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Scale Pants +Luck +Option (Class 1) -->
+			<Item Cat="9" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Scale Pants +Luck +Option (Class 4) -->
+			<Item Cat="9" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Scale Pants +Luck +Option (Class 6) -->
+			<Item Cat="9" Index="63" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Silk Pants +Luck +Option (Class 2) -->
+			<Item Cat="9" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Sphinx Pants +Luck +Option (Class 0) -->
+			<Item Cat="9" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Sphinx Pants +Luck + Option (Class 3) -->
+			<Item Cat="9" Index="65" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Violent Wind Pants +Luck +Option (Class 5) -->
+			<Item Cat="9" Index="96" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Robust Pants +Luck +Option (Class 7) -->
+			<Item Cat="9" Index="124" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Spink Pants +Luck +Option (Class 8) -->
+			<Item Cat="9" Index="186" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Pants (B) +Luck +Option (Class 9) -->
 		</List>
 		<List ID="4" Name="1st Lucky Gloves Ticket">
-			<Item Cat="10" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="1" /> <!-- Scale Gloves +Luck +Option (Class 1) -->
-			<Item Cat="10" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="4" /> <!-- Scale Gloves +Luck +Option (Class 4) -->
-			<Item Cat="10" Index="63" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="2" /> <!-- Silk Gloves +Luck +Option (Class 2) -->
-			<Item Cat="10" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="0" /> <!-- Sphinx Gloves +Luck +Option (Class 0) -->
-			<Item Cat="10" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="3" /> <!-- Sphinx Gloves +Luck + Option (Class 3) -->
-			<Item Cat="10" Index="65" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="5" /> <!-- Violent Wind Gloves +Luck +Option (Class 5) -->
-			<Item Cat="10" Index="96" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="7" /> <!-- Robust Gloves +Luck +Option (Class 7) -->
-			<Item Cat="10" Index="124" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="8" /> <!-- Rune Spink Gloves +Luck +Option (Class 8) -->
-			<Item Cat="10" Index="186" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="9" /> <!-- Slayer Gloves (B) +Luck +Option (Class 9) -->
+			<Item Cat="10" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Scale Gloves +Luck +Option (Class 1) -->
+			<Item Cat="10" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Scale Gloves +Luck +Option (Class 4) -->
+			<Item Cat="10" Index="63" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Silk Gloves +Luck +Option (Class 2) -->
+			<Item Cat="10" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Sphinx Gloves +Luck +Option (Class 0) -->
+			<Item Cat="10" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Sphinx Gloves +Luck + Option (Class 3) -->
+			<Item Cat="10" Index="65" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Violent Wind Gloves +Luck +Option (Class 5) -->
+			<Item Cat="10" Index="96" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Robust Gloves +Luck +Option (Class 7) -->
+			<Item Cat="10" Index="124" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Spink Gloves +Luck +Option (Class 8) -->
+			<Item Cat="10" Index="186" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Gloves (B) +Luck +Option (Class 9) -->
 		</List>
 		<List ID="5" Name="1st Lucky Boots Ticket">
-			<Item Cat="11" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="1" /> <!-- Scale Boots +Luck +Option (Class 1) -->
-			<Item Cat="11" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="4" /> <!-- Scale Boots +Luck +Option (Class 4) -->
-			<Item Cat="11" Index="62" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="6" /> <!-- Scale Boots +Luck +Option (Class 6) -->
-			<Item Cat="11" Index="63" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="2" /> <!-- Silk Boots +Luck +Option (Class 2) -->
-			<Item Cat="11" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="0" /> <!-- Sphinx Boots +Luck +Option (Class 0) -->
-			<Item Cat="11" Index="64" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="3" /> <!-- Sphinx Boots +Luck + Option (Class 3) -->
-			<Item Cat="11" Index="65" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="5" /> <!-- Violent Wind Boots +Luck +Option (Class 5) -->
-			<Item Cat="11" Index="96" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="7" /> <!-- Robust Boots +Luck +Option (Class 7) -->
-			<Item Cat="11" Index="124" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="8" /> <!-- Rune Spink Boots +Luck +Option (Class 8) -->
-			<Item Cat="11" Index="186" Skill="0" Luck="1" Option="1" Exc="-1" CharClass="9" /> <!-- Slayer Boots (B) +Luck +Option (Class 9) -->
+			<Item Cat="11" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="1" /> <!-- Scale Boots +Luck +Option (Class 1) -->
+			<Item Cat="11" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="4" /> <!-- Scale Boots +Luck +Option (Class 4) -->
+			<Item Cat="11" Index="62" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="6" /> <!-- Scale Boots +Luck +Option (Class 6) -->
+			<Item Cat="11" Index="63" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="2" /> <!-- Silk Boots +Luck +Option (Class 2) -->
+			<Item Cat="11" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="0" /> <!-- Sphinx Boots +Luck +Option (Class 0) -->
+			<Item Cat="11" Index="64" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="3" /> <!-- Sphinx Boots +Luck + Option (Class 3) -->
+			<Item Cat="11" Index="65" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="5" /> <!-- Violent Wind Boots +Luck +Option (Class 5) -->
+			<Item Cat="11" Index="96" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="7" /> <!-- Robust Boots +Luck +Option (Class 7) -->
+			<Item Cat="11" Index="124" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="8" /> <!-- Rune Spink Boots +Luck +Option (Class 8) -->
+			<Item Cat="11" Index="186" Skill="0" Luck="-1" Option="-2" Exc="-1" CharClass="9" /> <!-- Slayer Boots (B) +Luck +Option (Class 9) -->
 		</List>
 	</TicketItemList>
 

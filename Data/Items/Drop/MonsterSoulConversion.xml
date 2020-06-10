@@ -11,6 +11,22 @@
 // ### MonsterSoulConversion ###
 //	WeeklyPurchasesNumber: Maximum number the converter can be purchased a week
 //
+// ### MonsterSoulConversion::WeeklyReset ###
+//	Day: Day of a week:
+//	0: Sunday
+//	1: Monday
+//	2: Tuesday
+//	3: Wednesday
+//	4: Thursday
+//	5: Friday
+//	6: Saturday
+//	Hour: Hour of reset, 0-23
+//	Minute: Minute of reset, 0-59
+//	Second: Second of reset, 0-59
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ IMPORTANT: Change the reset time settings only while server is down for maintenance
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
 // ### MonsterSoulConversion::ConverterSettings::Converter ###
 //	Level: Converter level, 1-5
 //	Cat: Category of converter, see ItemList.xml
@@ -32,6 +48,8 @@
 -->
 
 <MonsterSoulConversion WeeklyPurchasesNumber="3">
+<WeeklyReset Day="4" Hour="10" Minute="30" Second="0" />
+
 	<ConverterSettings>
 		<Converter Level="1" Cat="14" Index="460" ReqSoulNumber="2"/>
 		<Converter Level="2" Cat="14" Index="461" ReqSoulNumber="2"/>

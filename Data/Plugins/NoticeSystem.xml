@@ -11,6 +11,15 @@
 // ### NoticeSystem ###
 //	Enable: Deactivates or activates the system, 0/1
 //
+// ### NoticeSystem::PvPNotice ###
+//	Enable: Deactivates or activates middle screen message of duel results, lang id: 743, 0/1
+//	R: R value of RGB standard
+//	G: G value of RGB standard
+//	B: B value of RGB standard
+//-------------------------------------------------------------------------------------------------------------
+//~~ RGB values for the message color, https://www.w3schools.com/colors/colors_picker.asp
+//-------------------------------------------------------------------------------------------------------------
+//
 // ### NoticeSystem::Tags::Tag ###
 //	Id: Unique tag ID, starting from 0, not extendable
 //	Text: Tag text
@@ -53,6 +62,7 @@
 -->
 
 <NoticeSystem Enabled="0">
+<PvPNotice Enable="1" R="255" G="105" B="180" />
 	<Tags>
 		<Tag Id="0" Text="" /> <!-- Normal item -->
 		<Tag Id="1" Text="Exc" />
