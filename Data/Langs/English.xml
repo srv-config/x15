@@ -795,6 +795,8 @@
 		<Msg ID="768" Text="%s has earned %s." />
 		<!-- 769~771 -->
 		<Msg ID="772" Text="Slayer" />
+		<!-- 773 -->
+		<Msg ID="774" Text="Creating party is possible only if level difference between players is not higher than %d" />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />

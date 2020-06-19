@@ -28,6 +28,7 @@
 //
 // ### MasteryItemMix::CombinationResult:Mix ###
 //	ID: Mix head ID, refers to HeadCode of mix.bmd
+//	RandomID: Optional attribute defining random Result ID from RandomCombinationResult section
 //	Cat: Mix result item category, see ItemList.xml
 //	Index: Mix result item index, see ItemList.xml
 //	Level: Result item level, 0-15
@@ -56,8 +57,15 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ For material IDs refer to see CombinationMaterials section
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//
 //	Money: Mix cost in Zen, not used at the moment
+//
+// ### RandomCombinationResult::Result ###
+//	ID: Unique ID of set of items
+// ### RandomCombinationResult::Result::Item ###
+//	Cat: Item category
+//	Index: Item index`
+//	Name: Name of item, used for description purpose only
+//	Rate: Chance of getting specific item. It is a weight rate, total is sum of all rates per ID
 //
 // STRICTLY NO COMMENTS INSIDE TAGS
 // 
@@ -1037,6 +1045,12 @@
 		<Mix ID="598" Cat="10" Index="194" Level="0" Name="Silverheart Lord Gloves" OptKeepType="6" SuccessRate="100" MaterialID1="444" MaterialCnt1="1" MaterialID2="498" MaterialCnt2="1" MaterialID3="21" MaterialCnt3="30" MaterialID4="22" MaterialCnt4="30" MaterialID5="6" MaterialCnt5="1" MaterialID6="3" MaterialCnt6="1" Money="0" />
 		<Mix ID="599" Cat="10" Index="196" Level="0" Name="Silverheart Lancer Gloves" OptKeepType="6" SuccessRate="100" MaterialID1="452" MaterialCnt1="1" MaterialID2="498" MaterialCnt2="1" MaterialID3="21" MaterialCnt3="30" MaterialID4="22" MaterialCnt4="30" MaterialID5="6" MaterialCnt5="1" MaterialID6="3" MaterialCnt6="1" Money="0" />
 		<Mix ID="600" Cat="10" Index="197" Level="0" Name="Silverheart Elf Gloves (B)" OptKeepType="6" SuccessRate="100" MaterialID1="346" MaterialCnt1="1" MaterialID2="498" MaterialCnt2="1" MaterialID3="21" MaterialCnt3="30" MaterialID4="22" MaterialCnt4="30" MaterialID5="6" MaterialCnt5="1" MaterialID6="3" MaterialCnt6="1" Money="0" />
+		<Mix ID="601" RandomID="0" Level="0" Name="Random Sealed Sculpture" OptKeepType="0" SuccessRate="100" MaterialID1="516" MaterialCnt1="1" MaterialID2="514" MaterialCnt2="1" MaterialID3="515" MaterialCnt3="1" MaterialID4="3" MaterialCnt4="1" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
+		<Mix ID="602" RandomID="1" Level="0" Name="Random Bloodangel Helmet" OptKeepType="8" SuccessRate="100" MaterialID1="517" MaterialCnt1="1" MaterialID2="7" MaterialCnt2="1" MaterialID3="8" MaterialCnt3="1" MaterialID4="3" MaterialCnt4="1" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
+		<Mix ID="603" RandomID="2" Level="0" Name="Random Bloodangel Armor" OptKeepType="8" SuccessRate="100" MaterialID1="518" MaterialCnt1="1" MaterialID2="7" MaterialCnt2="1" MaterialID3="8" MaterialCnt3="1" MaterialID4="3" MaterialCnt4="1" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
+		<Mix ID="604" RandomID="3" Level="0" Name="Random Bloodangel Pants" OptKeepType="8" SuccessRate="100" MaterialID1="519" MaterialCnt1="1" MaterialID2="7" MaterialCnt2="1" MaterialID3="8" MaterialCnt3="1" MaterialID4="3" MaterialCnt4="1" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
+		<Mix ID="605" RandomID="4" Level="0" Name="Random Bloodangel Gloves" OptKeepType="8" SuccessRate="100" MaterialID1="520" MaterialCnt1="1" MaterialID2="7" MaterialCnt2="1" MaterialID3="8" MaterialCnt3="1" MaterialID4="3" MaterialCnt4="1" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
+		<Mix ID="606" RandomID="5" Level="0" Name="Random Bloodangel Boots" OptKeepType="8" SuccessRate="100" MaterialID1="521" MaterialCnt1="1" MaterialID2="7" MaterialCnt2="1" MaterialID3="8" MaterialCnt3="1" MaterialID4="3" MaterialCnt4="1" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
 		<Mix ID="1000" Cat="10" Index="198" Level="0" Name="Silverheart Magic Gloves (B)" OptKeepType="6" SuccessRate="100" MaterialID1="353" MaterialCnt1="1" MaterialID2="498" MaterialCnt2="1" MaterialID3="21" MaterialCnt3="30" MaterialID4="22" MaterialCnt4="30" MaterialID5="6" MaterialCnt5="1" MaterialID6="3" MaterialCnt6="1" Money="0" />
 		<Mix ID="1001" Cat="11" Index="189" Level="0" Name="Silverheart Knight Boots" OptKeepType="6" SuccessRate="100" MaterialID1="432" MaterialCnt1="1" MaterialID2="498" MaterialCnt2="1" MaterialID3="21" MaterialCnt3="30" MaterialID4="22" MaterialCnt4="30" MaterialID5="6" MaterialCnt5="1" MaterialID6="3" MaterialCnt6="1" Money="0" />
 		<Mix ID="1002" Cat="11" Index="193" Level="0" Name="Silverheart Magic Boots (A)" OptKeepType="6" SuccessRate="100" MaterialID1="350" MaterialCnt1="1" MaterialID2="498" MaterialCnt2="1" MaterialID3="21" MaterialCnt3="30" MaterialID4="22" MaterialCnt4="30" MaterialID5="6" MaterialCnt5="1" MaterialID6="3" MaterialCnt6="1" Money="0" />
@@ -1075,5 +1089,81 @@
 		<Mix ID="1038" Cat="9" Index="193" Level="0" Name="Silverheart Magic Pants (A)" OptKeepType="128" SuccessRate="100" MaterialID1="487" MaterialCnt1="1" MaterialID2="178" MaterialCnt2="1" MaterialID3="7" MaterialCnt3="10" MaterialID4="8" MaterialCnt4="10" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
 		<Mix ID="1039" Cat="10" Index="193" Level="0" Name="Silverheart Magic Gloves (A)" OptKeepType="128" SuccessRate="100" MaterialID1="488" MaterialCnt1="1" MaterialID2="178" MaterialCnt2="1" MaterialID3="7" MaterialCnt3="10" MaterialID4="8" MaterialCnt4="10" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
 		<Mix ID="1040" Cat="11" Index="193" Level="0" Name="Silverheart Magic Boots (A)" OptKeepType="128" SuccessRate="100" MaterialID1="489" MaterialCnt1="1" MaterialID2="178" MaterialCnt2="1" MaterialID3="7" MaterialCnt3="10" MaterialID4="8" MaterialCnt4="10" MaterialID5="6" MaterialCnt5="1" MaterialID6="-1" MaterialCnt6="0" Money="0" />
-	</CombinationResult>																	
+	</CombinationResult>
+	<RandomCombinationResult>
+		<Result ID="0">
+			<Item Cat="14" Index="472" Name="Scratched Bloodangel Helmet" Rate="1" />
+			<Item Cat="14" Index="473" Name="Scratched Bloodangel Armor" Rate="1" />
+			<Item Cat="14" Index="474" Name="Scratched Bloodangel Pants" Rate="1" />
+			<Item Cat="14" Index="475" Name="Scratched Bloodangel Gloves" Rate="1" />
+			<Item Cat="14" Index="476" Name="Scratched Bloodangel Boots" Rate="1" />
+		</Result>
+		<Result ID="1">
+			<Item Cat="8" Index="98" Name="Bloodangel Knight Armor" Rate="1" />
+			<Item Cat="8" Index="99" Name="Bloodangel Wizard Armor" Rate="1" />
+			<Item Cat="8" Index="100" Name="Bloodangel Elf Armor (A)" Rate="1" />
+			<Item Cat="8" Index="101" Name="Bloodangel Summoner Armor" Rate="1" />
+			<Item Cat="8" Index="102" Name="Bloodangel Magic Armor (A)" Rate="1" />
+			<Item Cat="8" Index="103" Name="Bloodangel Lord Armor" Rate="1" />
+			<Item Cat="8" Index="104" Name="Bloodangel Fighter Armor" Rate="1" />
+			<Item Cat="8" Index="105" Name="Bloodangel Lancer Armor" Rate="1" />
+			<Item Cat="8" Index="122" Name="Bloodangel Runist Armor" Rate="1" />
+			<Item Cat="8" Index="158" Name="Bloodangel Elf Armor (B)" Rate="1" />
+			<Item Cat="8" Index="161" Name="Bloodangel Magic Armor (B)" Rate="1" />
+			<Item Cat="8" Index="180" Name="Bloodangel Slayer Armor" Rate="1" />
+		</Result>
+		<Result ID="2">	
+			<Item Cat="7" Index="98" Name="Bloodangel Knight Helm" Rate="1" />
+			<Item Cat="7" Index="99" Name="Bloodangel Wizard Helm" Rate="1" />
+			<Item Cat="7" Index="100" Name="Bloodangel Elf Helm (A)" Rate="1" />
+			<Item Cat="7" Index="101" Name="Bloodangel Summoner Helm" Rate="1" />
+			<Item Cat="7" Index="103" Name="Bloodangel Lord Helm" Rate="1" />
+			<Item Cat="7" Index="104" Name="Bloodangel Fighter Helm" Rate="1" />
+			<Item Cat="7" Index="105" Name="Bloodangel Lancer Helm" Rate="1" />
+			<Item Cat="7" Index="122" Name="Bloodangel Runist Helm" Rate="1" />
+			<Item Cat="7" Index="158" Name="Bloodangel Elf Helm (B)" Rate="1" />
+			<Item Cat="7" Index="180" Name="Bloodangel Slayer Helm" Rate="1" />
+		</Result>
+		<Result ID="3">	
+			<Item Cat="9" Index="98" Name="Bloodangel Knight Pants" Rate="1" />
+			<Item Cat="9" Index="99" Name="Bloodangel Wizard Pants" Rate="1" />
+			<Item Cat="9" Index="100" Name="Bloodangel Elf Pants (A)" Rate="1" />
+			<Item Cat="9" Index="101" Name="Bloodangel Summoner Pants" Rate="1" />
+			<Item Cat="9" Index="102" Name="Bloodangel Magic Pants (A)" Rate="1" />
+			<Item Cat="9" Index="103" Name="Bloodangel Lord Pants" Rate="1" />
+			<Item Cat="9" Index="104" Name="Bloodangel Fighter Pants" Rate="1" />
+			<Item Cat="9" Index="105" Name="Bloodangel Lancer Pants" Rate="1" />
+			<Item Cat="9" Index="122" Name="Bloodangel Runist Pants" Rate="1" />
+			<Item Cat="9" Index="158" Name="Bloodangel Elf Pants (B)" Rate="1" />
+			<Item Cat="9" Index="161" Name="Bloodangel Magic Pants (B)" Rate="1" />
+			<Item Cat="9" Index="180" Name="Bloodangel Slayer Pants" Rate="1" />
+		</Result>
+		<Result ID="4">	
+			<Item Cat="10" Index="98" Name="Bloodangel Knight Gloves" Rate="1" />
+			<Item Cat="10" Index="99" Name="Bloodangel Wizard Gloves" Rate="1" />
+			<Item Cat="10" Index="100" Name="Bloodangel Elf Gloves (A)" Rate="1" />
+			<Item Cat="10" Index="101" Name="Bloodangel Summoner Gloves" Rate="1" />
+			<Item Cat="10" Index="102" Name="Bloodangel Magic Gloves (A)" Rate="1" />
+			<Item Cat="10" Index="103" Name="Bloodangel Lord Gloves" Rate="1" />
+			<Item Cat="10" Index="105" Name="Bloodangel Lancer Gloves" Rate="1" />
+			<Item Cat="10" Index="122" Name="Bloodangel Runist Glove" Rate="1" />
+			<Item Cat="10" Index="158" Name="Bloodangel Elf Gloves (B)" Rate="1" />
+			<Item Cat="10" Index="161" Name="Bloodangel Magic Gloves (B)" Rate="1" />
+			<Item Cat="10" Index="180" Name="Bloodangel Slayer Gloves" Rate="1" />
+		</Result>
+		<Result ID="5">	
+			<Item Cat="11" Index="98" Name="Bloodangel Knight Boots" Rate="1" />
+			<Item Cat="11" Index="99" Name="Bloodangel Wizard Boots" Rate="1" />
+			<Item Cat="11" Index="100" Name="Bloodangel Elf Boots (A)" Rate="1" />
+			<Item Cat="11" Index="101" Name="Bloodangel Summoner Boots" Rate="1" />
+			<Item Cat="11" Index="102" Name="Bloodangel Magic Boots (A)" Rate="1" />
+			<Item Cat="11" Index="103" Name="Bloodangel Lord Boots" Rate="1" />
+			<Item Cat="11" Index="104" Name="Bloodangel Fighter Boots" Rate="1" />
+			<Item Cat="11" Index="105" Name="Bloodangel Lancer Boots" Rate="1" />
+			<Item Cat="11" Index="122" Name="Bloodangel Runist Boots" Rate="1" />
+			<Item Cat="11" Index="158" Name="Bloodangel Elf Boots (B)" Rate="1" />
+			<Item Cat="11" Index="161" Name="Bloodangel Magic Boots (B)" Rate="1" />
+			<Item Cat="11" Index="180" Name="Bloodangel Slayer Boots" Rate="1" />
+		</Result>
+	</RandomCombinationResult>
 </MasteryItemMix>
