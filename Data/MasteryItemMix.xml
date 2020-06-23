@@ -587,6 +587,14 @@
 		<Material ID="511" Cat="10" Index="183" MinLevel="11" MaxLevel="15" Option="4" Durability="0" Type="2" Name="Soul Slayer Gloves" />
 		<Material ID="512" Cat="0" Index="74" MinLevel="11" MaxLevel="15" Option="4" Durability="0" Type="1" Name="Soul Short Sword" />
 		<Material ID="513" Cat="0" Index="75" MinLevel="11" MaxLevel="15" Option="4" Durability="0" Type="1" Name="Blue Eye Short Sword" />
+		<Material ID="514" Cat="14" Index="13" MinLevel="0" MaxLevel="0" Option="0" Durability="5" Type="0" Name="Jewel of Bless" />
+		<Material ID="515" Cat="14" Index="14" MinLevel="0" MaxLevel="0" Option="0" Durability="5" Type="0" Name="Jewel of Soul" />
+		<Material ID="516" Cat="14" Index="471" MinLevel="0" MaxLevel="0" Option="0" Durability="50" Type="0" Name="Sealed Armor Sculpture" />
+		<Material ID="517" Cat="14" Index="472" MinLevel="0" MaxLevel="0" Option="0" Durability="0" Type="0" Name="Scratched Bloodangel Helmet" />
+		<Material ID="518" Cat="14" Index="473" MinLevel="0" MaxLevel="0" Option="0" Durability="0" Type="0" Name="Scratched Bloodangel Armor" />
+		<Material ID="519" Cat="14" Index="474" MinLevel="0" MaxLevel="0" Option="0" Durability="0" Type="0" Name="Scratched Bloodangel Pants" />
+		<Material ID="520" Cat="14" Index="475" MinLevel="0" MaxLevel="0" Option="0" Durability="0" Type="0" Name="Scratched Bloodangel Gloves" />
+		<Material ID="521" Cat="14" Index="476" MinLevel="0" MaxLevel="0" Option="0" Durability="0" Type="0" Name="Scratched Bloodangel Boots" />
 	</CombinationMaterials>
 	<CombinationResult>
 		<Mix ID="78" Cat="8" Index="98" Level="0" Name="Bloodangel Knight Armor" OptKeepType="24" SuccessRate="100" MaterialID1="78" MaterialCnt1="1" MaterialID2="127" MaterialCnt2="1" MaterialID3="-1" MaterialCnt3="0" MaterialID4="-1" MaterialCnt4="0" MaterialID5="-1" MaterialCnt5="0" MaterialID6="-1" MaterialCnt6="0" Money="0" />
