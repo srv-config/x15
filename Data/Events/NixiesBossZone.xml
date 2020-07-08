@@ -11,10 +11,10 @@
 //
 // ### NixiesBossZone ###
 //	Enable: Opens or restricts access to Nixies Lake Boss Zone, 0/1
-//
+//	MaxBossZoneEnterTime: Maximum time player can stay in Nix Boss zone, minutes
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<NixiesBossZone Enable="1">
+<NixiesBossZone Enable="1" MaxBossZoneEnterTime="15">
 	<!-- More options to come upon requirement -->
 </NixiesBossZone>
