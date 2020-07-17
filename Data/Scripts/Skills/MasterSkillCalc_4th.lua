@@ -59,9 +59,18 @@ function IceBlood_4thEnchant_Gladiator(InDamage, Strength, Energy)
 	return OutDamage, SuccessRate, DebuffTime
 end
 
-function FireSlash_4thEnchant_Gladiator(InDamage, Strength, Energy)
-	local OutDamage = InDamage * 2
-	
+function FireSlash_4thEnchant_Gladiator(InDamage, Strength, Energy, BarrageCount)
+    local OutDamage = InDamage * 2
+    
+    if (BarrageCount == 0) then
+        OutDamage = OutDamage * 0.15
+    elseif (BarrageCount == 1) then
+        OutDamage = OutDamage * 0.18
+    elseif (BarrageCount == 2) then
+        OutDamage = OutDamage * 0.22
+    elseif (BarrageCount == 3) then
+        OutDamage = OutDamage * 0.25
+    end
 	return OutDamage
 end
 

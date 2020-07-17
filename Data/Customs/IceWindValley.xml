@@ -35,6 +35,7 @@
 //
 // ### IceWindValley::ApplicationConditions ###
 //	MinGuildMember: Minimum guild members to register to the event
+//	MaxGuildMember: Maximum guild members to register to the event
 //	WCoin: Cost of registration in WCoins
 //	GoblinPoint: Cost of registration in Goblin Points
 //	Ruud: Cost of registration in Ruud
@@ -128,7 +129,7 @@
 
 <IceWindValley Enabled="0" ServerCode="0" ActiveDay="-1" Type="1">
 	<StartTime Hour="8" Minute="0" Duration="30" RegistrationHour="7" RegistrationMinute="50" RegistrationDuration="5" />
-	<ApplicationConditions MinGuildMember="1" WCoin="0" GoblinPoint="0" Ruud="0" Contribution="0" Zen="0"/>
+	<ApplicationConditions MinGuildMember="1" MaxGuildMember="10" WCoin="0" GoblinPoint="0" Ruud="0" Contribution="0" Zen="0"/>
 	<Settings BlockMoveDevias3="1" HideUnregisteredPlayer="1" MaxLeaveTime="30" TotalSitdownTime="60" GuildAssistantCanSit="1" GuildMemberCanSit="1" PlayType="0" VibrationEffect="1" VibrationDuration="10" ApplyFlameEffect="1"/>
 
 	<CityLord EnableMap="1" Map="10" Gate="63" NPC="234" NPCMap="0" NPCX="128" NPCY="135" />
@@ -152,6 +153,7 @@
 		<String Id="14" Text="Ice Wind Registration is over" />
 		<String Id="15" Text="You lack requirements to register" />
 		<String Id="16" Text="Your guild is already registered" />
+		<String ID="17" Text="Maximum guild members allowed in a guild is %d" />
 	</Strings>
 
 	<RewardsLeader EqualWC="1000" EqualGP="1000" EqualRuud="1000" EqualContribution="1000" BuffId="44" BuffDuration="3600" BuffEffect="67" BuffEffectValue="15" EventBagReward="1"/>

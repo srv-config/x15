@@ -12,6 +12,7 @@
 //	Enable: Activates or deactivates the system, 0/1
 //	ReqLevel: Minimum level to do Wedding
 //	ReqMoney: Money charged for the Wedding, Zen
+//	AllowDivorce: Determines whether allow divorces or not, 0/1
 //
 // ### MarrySystem::Location ###
 //	MapNumber: Number of map the Wedding can take a place
@@ -43,19 +44,10 @@
 //	ItemIndex: Index of the item to award with, see ItemList.xml
 //	Count: Count of item to award with, see ItemList.xml
 //
-// ### MarrySystem::DivorceSettings ###
-//	Allow: Determines whether allow divorces or no, 0/1
-//	ReqSpecialItem: Determines whether require special item for getting divorced or not from divorcing side, 0/1
-//
-// ### MarrySystem::DivorceSettings::Item ###
-//	ItemCat: Category of the item to process the divorce, see ItemList.xml
-//	ItemIndex: Index of the item to process the divorce, see ItemList.xml
-//	Count: Count of item to process the divorce, see ItemList.xml
-//
 // STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
-<MarrySystem Enable="1" ReqLevel="50" ReqMoney="2000">
+<MarrySystem Enable="1" ReqLevel="50" ReqMoney="2000" AllowDivorce="1">
 	<Location MapNumber="2" StartX="12" StartY="25" EndX="14" EndY="26" />
 	
 	<WeddingSettings Homosexual="0" ReqSpecialItem="0">
@@ -67,8 +59,4 @@
 		<Item Side="1" ItemCat="14" ItemIndex="13" ItemCount="1" /> <!-- Side which requests -->
 		<Item Side="2" ItemCat="14" ItemIndex="13" ItemCount="1" /> <!-- Side which accepts -->
 	</WeddingGift>
-	
-	<DivorceSettings Allow="1" ReqSpecialItem="1">
-		<Item ItemCat="14" ItemIndex="13" ItemCount="1" />
-	</DivorceSettings>
 </MarrySystem>

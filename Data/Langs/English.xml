@@ -799,6 +799,7 @@
 		<Msg ID="774" Text="Creating party is possible only if level difference between players is not higher than %d" />
 		<Msg ID="775" Text="Maximum time of %d minutes in the boss zone passed, teleporting to safe zone." />
 		<Msg ID="776" Text="[Off-Level] Configure Mu Helper with basic attack skill before entering Offline Levelling." />
+		<Msg ID="777" Text="Luckily spawned in place where your soul left the body last time." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
