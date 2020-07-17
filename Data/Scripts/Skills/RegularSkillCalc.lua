@@ -287,6 +287,22 @@ function ImpaleSkillCalc(Class, InDamage, Energy)
 	return OutDamage
 end
 
+-- SkillID: 55, Fire Slash - (Magic Gladiator, Duel Master)
+function GladiatorFireSlash(InDamage, Strength, Energy, BarrageCount)
+    local OutDamage = 0
+    
+    if (BarrageCount == 0) then
+        OutDamage = (InDamage * 0.15) * ( 200 + ( Energy / 10 ) ) / 100;
+    elseif (BarrageCount == 1) then
+        OutDamage = (InDamage * 0.18) * ( 200 + ( Energy / 10 ) ) / 100;
+    elseif (BarrageCount == 2) then
+        OutDamage = (InDamage * 0.22) * ( 200 + ( Energy / 10 ) ) / 100;
+    elseif (BarrageCount == 3) then
+        OutDamage = (InDamage * 0.25) * ( 200 + ( Energy / 10 ) ) / 100;
+    end
+    return OutDamage
+end
+
 -- SkillID: 56, Power Slash - (Magic Gladiator, Duel Master)
 function GladiatorPowerSlash(InDamage, Energy)
 	local OutDamage = InDamage * 2

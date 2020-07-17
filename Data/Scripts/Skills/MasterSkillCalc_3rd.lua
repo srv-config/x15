@@ -443,12 +443,22 @@ function PowerSlash_Master_Gladiator(InDamage, Energy)
 	return OutDamage
 end
 
--- SkillID: 490, Blood Attack Strengthener - (Duel Master)
-function FireSlash_MasterLevel1_Gladiator(InDamage, Energy)
-	local OutDamage = InDamage * 2
-	
-	return OutDamage
+-- SkillID: 490, Fire Slash Strengthener - (Duel Master)
+function FireSlash_MasterLevel1_Gladiator(InDamage, Strength, Energy, BarrageCount)
+    local OutDamage = InDamage * 2
+    
+    if (BarrageCount == 0) then
+        OutDamage = OutDamage * 0.15
+    elseif (BarrageCount == 1) then
+        OutDamage = OutDamage * 0.18
+    elseif (BarrageCount == 2) then
+        OutDamage = OutDamage * 0.22
+    elseif (BarrageCount == 3) then
+        OutDamage = OutDamage * 0.25
+    end
+    return OutDamage
 end
+
 
 -- SkillID: 492, Flame Strike Strengthener - (Duel Master)
 function FlameStrike_MasterLevel1_Gladiator(InDamage, Energy)
@@ -458,10 +468,19 @@ function FlameStrike_MasterLevel1_Gladiator(InDamage, Energy)
 end
 
 -- SkillID: 493, Fire Slash Mastery - (Duel Master)
-function FireSlash_MasterLevel2_Gladiator(InDamage, Energy)
-	local OutDamage = InDamage * 2
-	
-	return OutDamage
+function FireSlash_MasterLevel2_Gladiator(InDamage, Strength, Energy, BarrageCount)
+    local OutDamage = InDamage * 2
+    
+    if (BarrageCount == 0) then
+        OutDamage = OutDamage * 0.15
+    elseif (BarrageCount == 1) then
+        OutDamage = OutDamage * 0.18
+    elseif (BarrageCount == 2) then
+        OutDamage = OutDamage * 0.22
+    elseif (BarrageCount == 3) then
+        OutDamage = OutDamage * 0.25
+    end
+    return OutDamage
 end
 
 -- SkillID: 495, Earth Prison - (Duel Master)
