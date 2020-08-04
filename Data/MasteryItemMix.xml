@@ -1107,7 +1107,19 @@
 			<Item Cat="14" Index="475" Name="Scratched Bloodangel Gloves" Rate="1" />
 			<Item Cat="14" Index="476" Name="Scratched Bloodangel Boots" Rate="1" />
 		</Result>
-		<Result ID="1">
+		<Result ID="1">	
+			<Item Cat="7" Index="98" Name="Bloodangel Knight Helm" Rate="1" />
+			<Item Cat="7" Index="99" Name="Bloodangel Wizard Helm" Rate="1" />
+			<Item Cat="7" Index="100" Name="Bloodangel Elf Helm (A)" Rate="1" />
+			<Item Cat="7" Index="101" Name="Bloodangel Summoner Helm" Rate="1" />
+			<Item Cat="7" Index="103" Name="Bloodangel Lord Helm" Rate="1" />
+			<Item Cat="7" Index="104" Name="Bloodangel Fighter Helm" Rate="1" />
+			<Item Cat="7" Index="105" Name="Bloodangel Lancer Helm" Rate="1" />
+			<Item Cat="7" Index="122" Name="Bloodangel Runist Helm" Rate="1" />
+			<Item Cat="7" Index="158" Name="Bloodangel Elf Helm (B)" Rate="1" />
+			<Item Cat="7" Index="180" Name="Bloodangel Slayer Helm" Rate="1" />
+		</Result>
+		<Result ID="2">
 			<Item Cat="8" Index="98" Name="Bloodangel Knight Armor" Rate="1" />
 			<Item Cat="8" Index="99" Name="Bloodangel Wizard Armor" Rate="1" />
 			<Item Cat="8" Index="100" Name="Bloodangel Elf Armor (A)" Rate="1" />
@@ -1120,18 +1132,6 @@
 			<Item Cat="8" Index="158" Name="Bloodangel Elf Armor (B)" Rate="1" />
 			<Item Cat="8" Index="161" Name="Bloodangel Magic Armor (B)" Rate="1" />
 			<Item Cat="8" Index="180" Name="Bloodangel Slayer Armor" Rate="1" />
-		</Result>
-		<Result ID="2">	
-			<Item Cat="7" Index="98" Name="Bloodangel Knight Helm" Rate="1" />
-			<Item Cat="7" Index="99" Name="Bloodangel Wizard Helm" Rate="1" />
-			<Item Cat="7" Index="100" Name="Bloodangel Elf Helm (A)" Rate="1" />
-			<Item Cat="7" Index="101" Name="Bloodangel Summoner Helm" Rate="1" />
-			<Item Cat="7" Index="103" Name="Bloodangel Lord Helm" Rate="1" />
-			<Item Cat="7" Index="104" Name="Bloodangel Fighter Helm" Rate="1" />
-			<Item Cat="7" Index="105" Name="Bloodangel Lancer Helm" Rate="1" />
-			<Item Cat="7" Index="122" Name="Bloodangel Runist Helm" Rate="1" />
-			<Item Cat="7" Index="158" Name="Bloodangel Elf Helm (B)" Rate="1" />
-			<Item Cat="7" Index="180" Name="Bloodangel Slayer Helm" Rate="1" />
 		</Result>
 		<Result ID="3">	
 			<Item Cat="9" Index="98" Name="Bloodangel Knight Pants" Rate="1" />

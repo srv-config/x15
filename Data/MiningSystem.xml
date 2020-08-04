@@ -104,7 +104,7 @@
 		<Reward ItemCat="14" ItemIndex="13" ItemDurability="33" ItemCount="1" />
 	</Twinkle> 
 	<Twinkle Type="606" Stage="1" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="2">
-		<Reward ItemCat="14" ItemIndex="13" ItemDurability="1" ItemCount="1" />
+		<Reward ItemCat="14" ItemIndex="13" ItemDurability="2" ItemCount="1" />
 	</Twinkle> 
 	<Twinkle Type="606" Stage="2" NotifyItemCat="14" NotifyItemIndex="13" JewelCount="6">
 		<Reward ItemCat="14" ItemIndex="13" ItemDurability="6" ItemCount="1" />

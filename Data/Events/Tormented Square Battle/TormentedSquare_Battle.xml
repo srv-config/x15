@@ -39,8 +39,16 @@
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // ### TormentedSquareBattle::ChaosGoblinAppearanceRate::Square::Round ###
-//	Number: Number of a round to spawn monsters
-//	SpawnRate: Chance to spawn Chaos Goblin, n/100
+//	Number: Number of times the Chaos Goblin Teleported so far
+//	MinimumHP: Value of HP to apply the teleport rule
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~ The settings allow to determine when to make Chaos Goblin to use teleport. If number of teleports
+//~~ is equal to Number attribute and actual Goblin HP is equal or lower than MinimumHP attribute then goblin will teleport.
+//~~ Maximum six rules.
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+// ### TormentedSquareBattle::ChaosGoblinTeleportSettings::Teleport ###
+//	
 //
 // STRICTLY NO COMMENTS INSIDE TAGS 
 -->
@@ -68,4 +76,13 @@
 		<Round Number="5" SpawnRate="0" />
 		<Round Number="6" SpawnRate="30" />
 	</ChaosGoblinAppearanceRate>
+	
+	<ChaosGoblinTeleportSettings>
+		<Teleport Number="0" MinimumHP="200.0" />
+		<Teleport Number="1" MinimumHP="150.0" />
+		<Teleport Number="2" MinimumHP="100.0" />
+		<Teleport Number="3" MinimumHP="50.0" />
+		<Teleport Number="5" MinimumHP="30.0" />
+		<Teleport Number="6" MinimumHP="10.0" />
+	</ChaosGoblinTeleportSettings>
 </TormentedSquareBattle>
