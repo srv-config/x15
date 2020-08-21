@@ -19,6 +19,7 @@
 // 
 // ### LastManStanding::Event ###
 //	Duration: Event play time, minutes
+//	TownSpawn: Time to move players to town after event end, minutes
 //	MapNumber: The map number the event runs on
 //	StartX: The Start X coordinate of entire event area
 //	StartY: The Start Y coordinate of entire event area
@@ -71,7 +72,7 @@
 -->	
 
 <LastManStanding Enable="1" DieCount="2" MinPlayers="2" MaxPlayers="500">
-	<Event Duration="15" MapNumber="6" StartX="146" StartY="78" EndX="160" EndY="60" />
+	<Event Duration="15" TownSpawn="1" MapNumber="6" StartX="146" StartY="78" EndX="160" EndY="60" />
 	<Registration Time="15" MapNumber="0" NPCIndex="258" PosX="145" PosY="140" Dir="1" ReqMoney="1000000" ReqSpecialItem="0" SpecialItemCount="1" ItemCat="14" ItemIndex="160" />
 
 	<Schedule>

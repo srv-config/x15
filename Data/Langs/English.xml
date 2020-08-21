@@ -173,7 +173,7 @@
 		<Msg ID="144" Text="You have insufficient level." />
 		<Msg ID="145" Text="Disconnect only after closing the Training window." />
 		<Msg ID="146" Text="Summoning cancelled." />
-		<Msg ID="147" Text="" /> <!-- Empty -->
+		<Msg ID="147" Text="Not enough energy to use the skill, you need at least %d energy points" />
 		<Msg ID="148" Text="You have %d points remaining. You next payment period is on %s.%s.%s at %s:%s (%s)." />
 		<Msg ID="149" Text="You can play until %s.%s.%s with your current balance (%s)." />
 		<Msg ID="150" Text="You are logged in as Free Player" />
@@ -800,6 +800,9 @@
 		<Msg ID="775" Text="Maximum time of %d minutes in the boss zone passed, teleporting to safe zone." />
 		<Msg ID="776" Text="[Off-Level] Configure Mu Helper with basic attack skill before entering Offline Levelling." />
 		<Msg ID="777" Text="Luckily spawned in place where your soul left the body last time." />
+		<Msg ID="778" Text="You need to wait %d more seconds to ride it again." />
+		<Msg ID="779" Text="Game Server %s entered the game and is available in %s at %d,%d." />
+		<Msg ID="780" Text="Reward has been given to Gremory Case." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
