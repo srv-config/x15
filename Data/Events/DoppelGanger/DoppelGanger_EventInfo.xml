@@ -8,6 +8,20 @@
 // == File is a part of IGCN Group MuOnline Server files.
 // ============================================================
 //
+// ### DoppelGanger::MonsterAttacksFirst ###
+//	DG: Monster (533) attacks first always, 0/1
+//	DW: Monster (534) attacks first always, 0/1
+//	DK: Monster (535) attacks first always, 0/1
+//	ELF: Monster (536) attacks first always, 0/1
+//	MG: Monster (537) attacks first always, 0/1
+//	DL: Monster (538) attacks first always, 0/1
+//	SU: Monster (539) attacks first always, 0/1
+//	RF: Monster (841) attacks first always, 0/1
+//	GL: Monster (842) attacks first always, 0/1
+//	RW: Monster (843) attacks first always, 0/1
+//	SLA: Monster (844) attacks first always, 0/1
+//	AttackFirstRate: Chance rate to get attacked by monster first (if 0 for any of above), n/10000
+//	
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~ Monster Indexes affected with settings below
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -22,6 +36,7 @@
 // uzupelnij roomy i schedule na bazie ori pliku
 -->
 <DoppelGanger MinParty="2" MinUserInParty="5">
+<MonsterAttacksFirst DG="1" DW="0" DK="0" ELF="0" MG="0" DL="1" SU="0" RF="0" GL="0" RW="0" SLA="0" AttackFirstRate="7000" />
 	<Schedule>
 		<Time NotifyHour="2" NotifyMin="20" ReadyHour="2" ReadyMin="27" StartHour="2" StartMin="30" />
 		<Time NotifyHour="12" NotifyMin="20" ReadyHour="12" ReadyMin="27" StartHour="12" StartMin="30" />
