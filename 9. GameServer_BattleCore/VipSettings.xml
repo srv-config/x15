@@ -24,7 +24,7 @@
 //	ShopSellPrice: Multiplier for sell prices to shops, float
 //	ML_MonsterMinLevel: Minimum Monster level to gain Master Experience, int
 //	MJ_MonsterMinLevel: Minimum Monster level to gain Majestic Experience, int
-//	PointPerReset: Amount of point to award per reset, formula: LevelUpPoint = (LevelUpPoint + Resets+1) * PointPerReset
+//	PointPerResetBonus: Per reset free level up points bonus added to number of points from ResetSystem.xml
 //	NightStartHour: Start hour of night rates (0-23)
 //	NightStartMinute: Start minute for night rates (0-60)
 //	NightEndHour: End hour of night rates (0-23)
@@ -109,7 +109,7 @@
 	<Message Day="[SERVER RATES] Day Rates on going!" Night="[SERVER RATES] Night Rates on going, enjoy!" />
 	
 	<VipTypes>	
-		<Vip Type="1" Name="Bronze" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerReset="250" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+		<Vip Type="1" Name="Bronze" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerResetBonus="50" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
 			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			
@@ -121,7 +121,7 @@
 				<Wing Second="90" Monster="60" Third="40" Fourth="40" Cape="90" FeatherOfCondor="60" />
 			</ChaosBoxMixRates>
 		</Vip>
-		<Vip Type="2" Name="Silver" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerReset="300" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+		<Vip Type="2" Name="Silver" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerResetBonus="100" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
 			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			
@@ -133,7 +133,7 @@
 				<Wing Second="90" Monster="60" Third="40" Fourth="40" Cape="90" FeatherOfCondor="60" />
 			</ChaosBoxMixRates>
 		</Vip>
-		<Vip Type="3" Name="Gold" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerReset="350" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+		<Vip Type="3" Name="Gold" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerResetBonus="150" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
 			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			
@@ -145,7 +145,7 @@
 				<Wing Second="90" Monster="60" Third="40" Fourth="40" Cape="90" FeatherOfCondor="60" />
 			</ChaosBoxMixRates>
 		</Vip>
-		<Vip Type="4" Name="Platinum" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerReset="400" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
+		<Vip Type="4" Name="Platinum" ML_MonsterMinLevel="95" MJ_MonsterMinLevel="160" PointPerResetBonus="200" NightStartHour="22" NightStartMinute="0" NightEndHour="7" NightEndMinute="30">
 			<Day ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			<Night ExpBonus="0.0" DropBonus="0" MasterExpBonus="0.0" MasterDropBonus="0" MajesticExpBonus="0.0" MajesticDropBonus="0" OffLevelExp="1.0" />
 			

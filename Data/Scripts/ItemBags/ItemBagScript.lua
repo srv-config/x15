@@ -393,6 +393,10 @@ function LoadItemBag() -- Bags Load
 	AddItemBag(BAG_EVENT, 77,0, 'Event_IWC_GuildMaster') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 78,0, 'Event_IWC_GuildMember') -- DropFunction /3/
 	AddItemBag(BAG_EVENT, 79,0, 'Event_IWC_Player') -- DropFunction /3/
+	
+-- Bags for purpose of Reset System
+	AddItemBag(BAG_EVENT, 300,0, 'ResetSystem_Regular')
+	AddItemBag(BAG_EVENT, 301,0, 'ResetSystem_Milestone')
 
 end
 

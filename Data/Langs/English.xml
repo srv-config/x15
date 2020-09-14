@@ -488,7 +488,7 @@
 		<Msg ID="459" Text="[ResetCMD] Sorry, you need %d Money" />
 		<Msg ID="460" Text="[ResetCMD] Sorry, you have reached maximum reset" />
 		<Msg ID="461" Text="[ResetCMD] Sorry, you have to de-equip items." />
-		<Msg ID="462" Text="Reset successfully, your reset count is now %d: " />
+		<Msg ID="462" Text="Reset successfully, your reset count is now %d." />
 		<Msg ID="463" Text="Please re-login" />
 		<Msg ID="464" Text="You have insufficient GM Level (You need 8 Level)" />
 		<Msg ID="465" Text="Inventory cleared!" />
@@ -802,7 +802,11 @@
 		<Msg ID="777" Text="Luckily spawned in place where your soul left the body last time." />
 		<Msg ID="778" Text="You need to wait %d more seconds to ride it again." />
 		<Msg ID="779" Text="Game Server %s entered the game and is available in %s at %d,%d." />
-		<Msg ID="780" Text="Reward has been given to Gremory Case." />
+		<Msg ID="780" Text="%s reward has been given to Gremory Case." />
+		<Msg ID="781" Text="Last Man Standing" />
+		<Msg ID="782" Text="Reset" />
+		<Msg ID="783" Text="Milestone Reset" />
+		<Msg ID="784" Text="You have exceeded the amount of Ruud you can possess." />
 	</Message>
 	<Map>
 		<Msg ID="0" Text="Lorencia" />
