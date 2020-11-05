@@ -86,7 +86,7 @@
 -->
 
 <ResetSystem Enable="1">
-<Requirements MinLevel="400" Cost="5000000" MultiplyCostPerResets="1" MaxCost="150000000" MaxReset="100" />
+<Requirements MinLevel="400" Cost="5000000" MultiplyCostPerResets="1" MaxCost="150000000" MaxReset="101" />
 <Settings RemoveEquipment="1" RemoveFromParty="1" EnableMuHelper="0" ClearBuffs="1" ResetStats="0" SaveOldStatPoint="0" ResetMasterLevel="0" MoveToCharSelectWindow="0" StayOnPosition="0" MaxResetPoints="0" />
 
 	<DynamicResetRangeList> <!-- First rule that matches player requirements will be applied, therefore order of entries matters -->
@@ -99,7 +99,8 @@
 		<Range MinReset="61" MaxReset="70" MilestoneID="6" RewardSetID="6" />
 		<Range MinReset="71" MaxReset="80" MilestoneID="7" RewardSetID="7" />
 		<Range MinReset="81" MaxReset="90" MilestoneID="8" RewardSetID="8" />
-		<Range MinReset="91" MaxReset="MAX" MilestoneID="9" RewardSetID="9" />
+		<Range MinReset="91" MaxReset="100" MilestoneID="9" RewardSetID="9" />
+		<Range MinReset="MAX" MaxReset="MAX" MilestoneID="9" RewardSetID="9" /> <!-- Bonus reset to make last milestone usable -->
 	</DynamicResetRangeList>
 	
 	<RegResetsRewardList> <!-- Item issued to Gremory Case -->
